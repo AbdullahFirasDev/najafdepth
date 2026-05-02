@@ -453,3 +453,4 @@ prisma:error (EMAXCONNSESSION) max clients reached in session mode - max clients
  GET /sign-in 200 in 517ms (next.js: 6ms, application-code: 511ms)
 prisma:error (EMAXCONNSESSION) max clients reached in session mode - max clients are limited to pool_size: 15
  GET /sign-in 200 in 2.2s (next.js: 86ms, application-code: 2.1s)
+  Reload env: .env
