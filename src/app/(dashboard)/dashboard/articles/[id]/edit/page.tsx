@@ -7,6 +7,7 @@ import { canEditArticle, canModerateContent, canPublish } from "@/lib/permission
 import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 interface EditArticlePageProps {
   params: Promise<{ id: string }>;

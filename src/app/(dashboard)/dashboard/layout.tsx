@@ -7,6 +7,7 @@ import { auth } from "@/lib/auth";
 import { canAccessDashboard } from "@/lib/permissions";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function DashboardLayout({
   children,

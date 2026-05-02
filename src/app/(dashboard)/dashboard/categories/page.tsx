@@ -11,6 +11,7 @@ import { canDeleteTaxonomy, canManageTaxonomy } from "@/lib/permissions";
 import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 function normalizeDate(value: Date | string | null | undefined) {
   if (!value) {

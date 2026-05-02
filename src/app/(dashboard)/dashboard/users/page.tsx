@@ -7,6 +7,7 @@ import { prisma } from "@/lib/prisma";
 import type { RoleKey } from "@/types";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function UsersPage() {
   const session = await auth();

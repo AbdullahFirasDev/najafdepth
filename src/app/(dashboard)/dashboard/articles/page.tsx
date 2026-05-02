@@ -18,6 +18,7 @@ import {
 import { formatCompactDate, formatNumber } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const statusLabelMap = Object.fromEntries(
   articleStatuses.map((status) => [status.value, status.label]),

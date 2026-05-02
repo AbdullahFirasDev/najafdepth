@@ -6,6 +6,7 @@ import { getAuthorBySlug } from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 interface AuthorPageProps {
   params: Promise<{ slug: string }>;

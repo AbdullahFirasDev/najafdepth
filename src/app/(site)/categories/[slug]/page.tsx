@@ -8,6 +8,7 @@ import { getCategoryBySlug } from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 interface CategoryPageProps {
   params: Promise<{ slug: string }>;

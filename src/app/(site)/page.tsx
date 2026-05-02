@@ -9,6 +9,7 @@ import { SearchDiscovery } from "@/components/search/search-discovery";
 import { getHomepageData } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function HomePage() {
   const {

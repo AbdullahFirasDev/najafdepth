@@ -66,14 +66,26 @@ const roleValues: RoleKey[] = [
   "READER",
 ];
 
+const dashboardRevalidationPaths = [
+  "/dashboard",
+  "/dashboard/articles",
+  "/dashboard/categories",
+  "/dashboard/tags",
+  "/dashboard/comments",
+  "/dashboard/users",
+  "/dashboard/writer-requests",
+  "/dashboard/analytics",
+  "/dashboard/settings",
+];
+
+function revalidateUniquePaths(paths: Array<string | null | undefined>) {
+  new Set(paths.filter((path): path is string => Boolean(path))).forEach(
+    (path) => revalidatePath(path),
+  );
+}
+
 function revalidateDashboardPaths(...paths: string[]) {
-  [
-    "/dashboard",
-    "/dashboard/articles",
-    "/dashboard/analytics",
-    "/",
-    ...paths,
-  ].forEach((path) => revalidatePath(path));
+  revalidateUniquePaths([...dashboardRevalidationPaths, ...paths]);
 }
 
 async function getRoleId(role: RoleKey) {
@@ -148,12 +160,32 @@ async function syncArticleIndex(articleId: string) {
   await removeArticleFromSearchIndex(article.id);
 }
 
-function revalidateArticlePages(slug: string, articleId?: string) {
-  revalidatePath("/");
-  revalidatePath("/dashboard");
-  revalidatePath("/dashboard/articles");
-  revalidatePath("/search");
-  revalidatePath(`/articles/${slug}`);
+function revalidateArticlePages(
+  slug: string,
+  options?:
+    | string
+    | {
+        articleId?: string;
+        previousSlug?: string | null;
+        categorySlugs?: Array<string | null | undefined>;
+      },
+) {
+  const articleId = typeof options === "string" ? options : options?.articleId;
+  const previousSlug =
+    typeof options === "string" ? undefined : options?.previousSlug;
+  const categorySlugs =
+    typeof options === "string" ? undefined : options?.categorySlugs;
+
+  revalidateUniquePaths([
+    ...dashboardRevalidationPaths,
+    "/",
+    "/search",
+    `/articles/${slug}`,
+    previousSlug && previousSlug !== slug ? `/articles/${previousSlug}` : null,
+    ...(categorySlugs ?? []).map((categorySlug) =>
+      categorySlug ? `/categories/${categorySlug}` : null,
+    ),
+  ]);
 
   if (articleId) {
     revalidatePath(`/dashboard/articles/${articleId}/edit`);
@@ -259,9 +291,7 @@ export async function submitWriterApplication(input: {
     changes: parsed.data,
   });
 
-  revalidatePath("/apply");
-  revalidatePath("/dashboard/writer-requests");
-  revalidatePath("/dashboard/users");
+  revalidateDashboardPaths("/apply");
 
   return { success: true, message: "تم إرسال طلب الانضمام إلى الكتّاب بنجاح." };
 }
@@ -322,6 +352,11 @@ export async function upsertArticle(input: {
           publishedAt: true,
           status: true,
           reviewNotes: true,
+          category: {
+            select: {
+              slug: true,
+            },
+          },
         },
       })
     : null;
@@ -347,12 +382,15 @@ export async function upsertArticle(input: {
   }
 
   const uniqueTagIds = Array.from(new Set(parsed.data.tagIds));
-  const [categoryExists, tagsCount] = await Promise.all([
-    prisma.category.count({ where: { id: parsed.data.categoryId } }),
+  const [categoryRecord, tagsCount] = await Promise.all([
+    prisma.category.findUnique({
+      where: { id: parsed.data.categoryId },
+      select: { slug: true },
+    }),
     prisma.tag.count({ where: { id: { in: uniqueTagIds } } }),
   ]);
 
-  if (!categoryExists) {
+  if (!categoryRecord) {
     return { success: false, message: "القسم المحدد غير موجود." };
   }
 
@@ -458,7 +496,11 @@ export async function upsertArticle(input: {
     changes: { ...parsed.data, slug: safeSlug, finalStatus },
   });
 
-  revalidateArticlePages(article.slug, article.id);
+  revalidateArticlePages(article.slug, {
+    articleId: article.id,
+    previousSlug: existingArticle?.slug,
+    categorySlugs: [categoryRecord.slug, existingArticle?.category.slug],
+  });
 
   return {
     success: true,
@@ -487,6 +529,11 @@ export async function reviewArticle(input: {
       publishedAt: true,
       featured: true,
       featuredRank: true,
+      category: {
+        select: {
+          slug: true,
+        },
+      },
     },
   });
 
@@ -530,7 +577,10 @@ export async function reviewArticle(input: {
     changes: input,
   });
 
-  revalidateArticlePages(reviewedArticle.slug, reviewedArticle.id);
+  revalidateArticlePages(reviewedArticle.slug, {
+    articleId: reviewedArticle.id,
+    categorySlugs: [article.category.slug],
+  });
 
   return { success: true, message: "تم تحديث حالة المقال بنجاح." };
 }
@@ -546,7 +596,16 @@ export async function setFeaturedArticle(input: {
 
   const article = await prisma.article.findUnique({
     where: { id: input.articleId },
-    select: { id: true, slug: true, status: true },
+    select: {
+      id: true,
+      slug: true,
+      status: true,
+      category: {
+        select: {
+          slug: true,
+        },
+      },
+    },
   });
 
   if (!article) {
@@ -578,7 +637,10 @@ export async function setFeaturedArticle(input: {
     changes: input,
   });
 
-  revalidateArticlePages(article.slug, article.id);
+  revalidateArticlePages(article.slug, {
+    articleId: article.id,
+    categorySlugs: [article.category.slug],
+  });
   return {
     success: true,
     message: input.featured
@@ -597,6 +659,11 @@ export async function deleteArticle(articleId: string): Promise<ActionResult> {
       slug: true,
       authorId: true,
       status: true,
+      category: {
+        select: {
+          slug: true,
+        },
+      },
     },
   });
 
@@ -617,7 +684,9 @@ export async function deleteArticle(articleId: string): Promise<ActionResult> {
     entityId: article.id,
   });
 
-  revalidateDashboardPaths(`/articles/${article.slug}`, "/search");
+  revalidateArticlePages(article.slug, {
+    categorySlugs: [article.category.slug],
+  });
   return { success: true, message: "تم حذف المقال بنجاح." };
 }
 
@@ -819,10 +888,7 @@ export async function upsertCategory(input: unknown): Promise<ActionResult> {
     changes: { ...data, previousSlug: existingCategory?.slug },
   });
 
-  revalidatePath("/dashboard/categories");
-  revalidatePath("/");
-  revalidatePath("/search");
-  revalidatePath(`/categories/${category.slug}`);
+  revalidateDashboardPaths("/", "/search", `/categories/${category.slug}`);
   if (existingCategory?.slug && existingCategory.slug !== category.slug) {
     revalidatePath(`/categories/${existingCategory.slug}`);
   }
@@ -869,10 +935,7 @@ export async function deleteCategory(categoryId: string): Promise<ActionResult> 
     entityId: category.id,
   });
 
-  revalidatePath("/dashboard/categories");
-  revalidatePath("/");
-  revalidatePath("/search");
-  revalidatePath(`/categories/${category.slug}`);
+  revalidateDashboardPaths("/", "/search", `/categories/${category.slug}`);
   return { success: true, message: "تم حذف القسم بنجاح." };
 }
 
@@ -938,9 +1001,7 @@ export async function upsertTag(input: unknown): Promise<ActionResult> {
     changes: { ...data, previousSlug: existingTag?.slug },
   });
 
-  revalidatePath("/dashboard/tags");
-  revalidatePath("/");
-  revalidatePath("/search");
+  revalidateDashboardPaths("/", "/search");
   return { success: true, message: "تم حفظ الوسم بنجاح." };
 }
 
@@ -981,9 +1042,7 @@ export async function deleteTag(tagId: string): Promise<ActionResult> {
     entityId: tag.id,
   });
 
-  revalidatePath("/dashboard/tags");
-  revalidatePath("/");
-  revalidatePath("/search");
+  revalidateDashboardPaths("/", "/search");
   return { success: true, message: "تم حذف الوسم بنجاح." };
 }
 
@@ -1084,8 +1143,7 @@ export async function updateWriterApplicationStatus(input: {
     changes: input,
   });
 
-  revalidatePath("/dashboard/writer-requests");
-  revalidatePath("/dashboard/users");
+  revalidateDashboardPaths("/");
   return { success: true, message: "تم تحديث حالة طلب الكاتب." };
 }
 
@@ -1120,9 +1178,7 @@ export async function moderateComment(input: {
     changes: input,
   });
 
-  revalidatePath("/dashboard/comments");
-  revalidatePath(`/articles/${comment.article.slug}`);
-  revalidatePath("/dashboard");
+  revalidateDashboardPaths("/", "/search", `/articles/${comment.article.slug}`);
   return { success: true, message: "تم تحديث حالة التعليق." };
 }
 
@@ -1149,9 +1205,7 @@ export async function deleteComment(commentId: string): Promise<ActionResult> {
     entityId: comment.id,
   });
 
-  revalidatePath("/dashboard/comments");
-  revalidatePath(`/articles/${comment.article.slug}`);
-  revalidatePath("/dashboard");
+  revalidateDashboardPaths("/", "/search", `/articles/${comment.article.slug}`);
   return { success: true, message: "تم حذف التعليق بنجاح." };
 }
 
@@ -1283,8 +1337,7 @@ export async function upsertUser(input: unknown): Promise<ActionResult> {
     changes: { ...parsed.data, password: undefined },
   });
 
-  revalidatePath("/dashboard/users");
-  revalidatePath("/dashboard");
+  revalidateDashboardPaths("/");
   return {
     success: true,
     message: existingUser
@@ -1348,8 +1401,7 @@ export async function setUserActive(input: unknown): Promise<ActionResult> {
     changes: { isActive: parsed.data.isActive, status: nextStatus },
   });
 
-  revalidatePath("/dashboard/users");
-  revalidatePath("/dashboard");
+  revalidateDashboardPaths("/");
   return { success: true, message: "تم تحديث حالة المستخدم." };
 }
 
@@ -1409,8 +1461,7 @@ export async function deleteUser(userId: string): Promise<ActionResult> {
     entityId: user.id,
   });
 
-  revalidatePath("/dashboard/users");
-  revalidatePath("/dashboard");
+  revalidateDashboardPaths("/");
   return { success: true, message: "تم حذف المستخدم بنجاح." };
 }
 
@@ -1473,8 +1524,6 @@ export async function upsertSetting(input: {
     changes: parsed.data,
   });
 
-  revalidatePath("/");
-  revalidatePath("/dashboard");
-  revalidatePath("/dashboard/settings");
+  revalidateDashboardPaths("/", "/search");
   return { success: true, message: "تم حفظ الإعداد بنجاح." };
 }

@@ -33,13 +33,14 @@ export const authOptions: NextAuthOptions = {
           return null;
         }
 
-        const rate = checkRateLimit(`sign-in:${parsed.data.email}`, 8, 60_000);
+        const email = parsed.data.email.trim().toLowerCase();
+        const rate = checkRateLimit(`sign-in:${email}`, 8, 60_000);
         if (!rate.allowed) {
           return null;
         }
 
         const user = await prisma.user.findUnique({
-          where: { email: parsed.data.email },
+          where: { email },
           include: { role: true },
         });
 
@@ -108,10 +109,16 @@ export const authOptions: NextAuthOptions = {
   events: {
     async signIn(message) {
       if (message.user?.email) {
-        await prisma.user.update({
-          where: { email: message.user.email },
-          data: { lastLoginAt: new Date() },
-        });
+        try {
+          await prisma.user.update({
+            where: { email: message.user.email.trim().toLowerCase() },
+            data: { lastLoginAt: new Date() },
+          });
+        } catch (error) {
+          console.error("Failed to update last login timestamp", {
+            message: error instanceof Error ? error.message : "Unknown error",
+          });
+        }
       }
     },
   },

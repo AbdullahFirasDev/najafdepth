@@ -6,12 +6,12 @@ This project is prepared for PostgreSQL through Prisma 7. Use a hosted PostgreSQ
 
 - Supabase: create a project, open Project Settings > Database, and copy the PostgreSQL connection string.
 - Neon: create a project and database, then copy the pooled or direct PostgreSQL connection string from the connection details.
-- Keep `sslmode=require` in the URL for hosted providers.
+- For Supabase on Vercel, use the pooler URL with `sslmode=require&uselibpqcompat=true&connection_limit=1`.
 
 Examples:
 
 ```env
-DATABASE_URL="postgresql://postgres:PASSWORD@db.PROJECT.supabase.co:5432/postgres?sslmode=require"
+DATABASE_URL="postgresql://postgres:PASSWORD@HOST.pooler.supabase.com:5432/postgres?sslmode=require&uselibpqcompat=true&connection_limit=1"
 DATABASE_URL="postgresql://USER:PASSWORD@HOST.neon.tech/DATABASE?sslmode=require"
 ```
 
@@ -20,10 +20,10 @@ DATABASE_URL="postgresql://USER:PASSWORD@HOST.neon.tech/DATABASE?sslmode=require
 Set these in Vercel Project Settings > Environment Variables:
 
 ```env
-DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?sslmode=require"
-NEXTAUTH_URL="https://your-domain.example"
+DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?sslmode=require&uselibpqcompat=true&connection_limit=1"
+NEXTAUTH_URL="https://najafdepth.vercel.app"
 NEXTAUTH_SECRET="replace-with-a-long-random-secret"
-SITE_URL="https://your-domain.example"
+SITE_URL="https://najafdepth.vercel.app"
 NEXT_PUBLIC_SUPABASE_URL="https://PROJECT.supabase.co"
 SUPABASE_SERVICE_ROLE_KEY="replace-with-supabase-service-role-key"
 SUPABASE_STORAGE_BUCKET="article-images"
@@ -39,6 +39,10 @@ ADMIN_PASSWORD=""
 ```
 
 Optional services can stay empty. Meilisearch, Cloudinary, and email sending are skipped or fall back when their environment variables are not configured.
+
+For production login stability, set `NEXTAUTH_URL` exactly to `https://najafdepth.vercel.app`, keep `NEXTAUTH_SECRET` strong and stable across deployments, and avoid testing login on Vercel preview domains.
+
+When using the Supabase PostgreSQL pooler on Vercel, keep `connection_limit=1` in `DATABASE_URL`. Do not hardcode the database URL in source files; set it only through local `.env` and Vercel Environment Variables.
 
 ## 3. Supabase Storage
 

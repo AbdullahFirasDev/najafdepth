@@ -5,6 +5,7 @@ import { getHomepageData, getSearchPageData } from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 export const metadata = buildMetadata({
   title: "البحث",
   path: "/search",

@@ -189,7 +189,7 @@ cp .env.example .env
 ثم اضبط القيم حسب جهازك:
 
 ```env
-DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?sslmode=require"
+DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?sslmode=require&uselibpqcompat=true&connection_limit=1"
 NEXTAUTH_URL="http://localhost:3000"
 NEXTAUTH_SECRET="replace-with-a-long-random-secret"
 SITE_URL="http://localhost:3000"

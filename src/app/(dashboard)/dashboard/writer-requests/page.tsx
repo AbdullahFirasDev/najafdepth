@@ -9,6 +9,7 @@ import { prisma } from "@/lib/prisma";
 import { formatDate } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const statusLabels: Record<string, string> = {
   PENDING: "pending",
