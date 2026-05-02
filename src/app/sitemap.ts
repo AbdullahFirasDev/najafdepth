@@ -1,10 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import {
-  fallbackArticles,
-  fallbackCategories,
-  fallbackWriters,
-} from "@/lib/fallback-data";
+import { logDataLoadError } from "@/lib/data";
 import { prisma } from "@/lib/prisma";
 
 const baseUrl = process.env.SITE_URL || "http://localhost:3000";
@@ -49,22 +45,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           priority: 0.7,
         })),
     ];
-  } catch {
-    return [
-      ...entries,
-      ...fallbackArticles.map((article) => ({
-        url: `${baseUrl}/articles/${article.slug}`,
-        lastModified: new Date(article.publishedAt),
-        priority: 0.8,
-      })),
-      ...fallbackCategories.map((category) => ({
-        url: `${baseUrl}/categories/${category.slug}`,
-        priority: 0.75,
-      })),
-      ...fallbackWriters.map((writer) => ({
-        url: `${baseUrl}/authors/${writer.username}`,
-        priority: 0.7,
-      })),
-    ];
+  } catch (error) {
+    logDataLoadError("sitemap", "published sitemap entries", error);
+    return entries;
   }
 }

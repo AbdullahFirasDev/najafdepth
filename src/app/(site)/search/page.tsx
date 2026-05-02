@@ -40,7 +40,11 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     getHomepageData(),
   ]);
 
-  const searchResults = (results || []) as Array<Record<string, any>>;
+  const searchLoadError =
+    !Array.isArray(results) && results?.loadError ? results.loadError : null;
+  const searchResults = (
+    Array.isArray(results) ? results : (results?.results ?? [])
+  ) as Array<Record<string, any>>;
   const latestArticles = (homepageData.latestArticles || []) as Array<
     Record<string, any>
   >;
@@ -104,9 +108,18 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
               />
             ))}
           </div>
+        ) : searchLoadError ? (
+          <Card className="p-8 text-center">
+            <h3 className="text-xl font-bold">تعذر تحميل البيانات حاليًا</h3>
+            <p className="text-muted-foreground mt-2 text-sm leading-7">
+              يرجى المحاولة لاحقًا.
+            </p>
+          </Card>
         ) : (
           <Card className="p-8 text-center">
-            <h3 className="text-xl font-bold">لم يتم العثور على نتائج مطابقة</h3>
+            <h3 className="text-xl font-bold">
+              لم يتم العثور على نتائج مطابقة
+            </h3>
             <p className="text-muted-foreground mt-2 text-sm leading-7">
               جرّب كلمات أقل أو أزل بعض الفلاتر.
             </p>

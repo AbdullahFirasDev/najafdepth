@@ -14,6 +14,10 @@ function normalizeArabicQuery(input: string) {
     .replace(/[\u064B-\u065F]/g, "");
 }
 
+function getErrorMessage(error: unknown) {
+  return error instanceof Error ? error.message : "Unknown error";
+}
+
 export async function GET(request: Request) {
   const rate = checkRequestRateLimit(request, "search", 60, 60_000);
   if (!rate.allowed) {
@@ -37,7 +41,15 @@ export async function GET(request: Request) {
       ? categoryParam
       : undefined;
   const suggestOnly = searchParams.get("suggest") === "1";
-  const results = await searchArticles(query, { category }).catch(() => []);
+  const results = await searchArticles(query, { category }).catch((error) => {
+    console.error("Data load failed", {
+      route: "api/search",
+      purpose: "search suggestions and results",
+      message: getErrorMessage(error),
+      timestamp: new Date().toISOString(),
+    });
+    return [];
+  });
 
   const suggestions = results.slice(0, 5).map((item) => ({
     id: String(item.id),

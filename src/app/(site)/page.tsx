@@ -19,6 +19,7 @@ export default async function HomePage() {
     trendingArticles,
     categories,
     writers,
+    loadError,
   } = await getHomepageData();
   const latest = (latestArticles || []) as Array<Record<string, any>>;
   const trending = (trendingArticles || []) as Array<Record<string, any>>;
@@ -40,6 +41,12 @@ export default async function HomePage() {
 
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-10 px-4 py-5 sm:gap-12 md:px-6 md:py-8">
+      {loadError ? (
+        <p className="border-destructive/30 bg-destructive/5 text-destructive rounded-2xl border p-4 text-center text-sm">
+          تعذر تحميل البيانات حاليًا. يرجى المحاولة لاحقًا.
+        </p>
+      ) : null}
+
       <div className="order-1 md:order-2">
         <HeroBanner heroBanner={heroBanner} featuredArticle={featuredArticle} />
       </div>

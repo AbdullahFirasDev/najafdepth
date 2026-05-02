@@ -24,6 +24,7 @@ DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?sslmode=require&usel
 NEXTAUTH_URL="https://najafdepth.vercel.app"
 NEXTAUTH_SECRET="replace-with-a-long-random-secret"
 SITE_URL="https://najafdepth.vercel.app"
+ENABLE_FALLBACK_DATA="false"
 NEXT_PUBLIC_SUPABASE_URL="https://PROJECT.supabase.co"
 SUPABASE_SERVICE_ROLE_KEY="replace-with-supabase-service-role-key"
 SUPABASE_STORAGE_BUCKET="article-images"
@@ -38,11 +39,13 @@ ADMIN_EMAIL=""
 ADMIN_PASSWORD=""
 ```
 
-Optional services can stay empty. Meilisearch, Cloudinary, and email sending are skipped or fall back when their environment variables are not configured.
+Optional services can stay empty. Email sending and legacy Cloudinary support are skipped when their environment variables are not configured; search uses the database when Meilisearch is not configured.
 
 For production login stability, set `NEXTAUTH_URL` exactly to `https://najafdepth.vercel.app`, keep `NEXTAUTH_SECRET` strong and stable across deployments, and avoid testing login on Vercel preview domains.
 
 When using the Supabase PostgreSQL pooler on Vercel, keep `connection_limit=1` in `DATABASE_URL`. Do not hardcode the database URL in source files; set it only through local `.env` and Vercel Environment Variables.
+
+Keep `ENABLE_FALLBACK_DATA="false"` in production. Development fallback content is guarded and should not be used publicly; when the database is unavailable in production, the app logs the server error and shows a clean empty/error state.
 
 ## 3. Supabase Storage
 

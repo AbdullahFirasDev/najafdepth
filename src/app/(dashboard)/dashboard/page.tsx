@@ -9,6 +9,7 @@ export const revalidate = 0;
 
 export default async function DashboardPage() {
   const dashboard = await getDashboardData();
+  const loadError = dashboard.loadError as string | null | undefined;
   const metrics = dashboard.metrics as Array<{
     title: string;
     value: string;
@@ -41,6 +42,15 @@ export default async function DashboardPage() {
 
   return (
     <div className="space-y-6">
+      {loadError ? (
+        <Card className="border-destructive/30 bg-destructive/5 text-center">
+          <h1 className="text-xl font-black">تعذر تحميل البيانات حاليًا</h1>
+          <p className="text-muted-foreground mt-2 text-sm">
+            يرجى المحاولة لاحقًا.
+          </p>
+        </Card>
+      ) : null}
+
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
         {metrics.map((metric) => (
           <StatCard key={metric.title} {...metric} />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 import { ArticleCard } from "@/components/home/article-card";
 import { SectionHeading } from "@/components/home/section-heading";
@@ -18,6 +19,14 @@ export async function generateMetadata({ params }: CategoryPageProps) {
   const { slug } = await params;
   const category = await getCategoryBySlug(slug);
 
+  if (!category || category.loadError) {
+    return buildMetadata({
+      title: "القسم",
+      description: "تعذر تحميل البيانات حاليًا",
+      path: `/categories/${slug}`,
+    });
+  }
+
   return buildMetadata({
     title: category.name,
     description: category.description || `مقالات قسم ${category.name}`,
@@ -29,6 +38,27 @@ export async function generateMetadata({ params }: CategoryPageProps) {
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params;
   const category = await getCategoryBySlug(slug);
+
+  if (category?.loadError) {
+    return (
+      <div className="mx-auto flex max-w-3xl flex-col gap-4 px-4 py-16 text-center md:px-6">
+        <Card className="space-y-3 p-8">
+          <h1 className="text-2xl font-black">تعذر تحميل البيانات حاليًا</h1>
+          <p className="text-muted-foreground text-sm leading-7">
+            يرجى المحاولة لاحقًا.
+          </p>
+          <Button asChild>
+            <Link href="/search">العودة إلى البحث</Link>
+          </Button>
+        </Card>
+      </div>
+    );
+  }
+
+  if (!category) {
+    notFound();
+  }
+
   const articles = (category.articles || []) as Array<Record<string, any>>;
 
   return (

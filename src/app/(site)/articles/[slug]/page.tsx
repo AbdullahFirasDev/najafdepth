@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 import { ArticleActions } from "@/components/articles/article-actions";
 import { CommentList } from "@/components/articles/comment-list";
@@ -26,6 +27,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
 
+  if (!article || article.loadError) {
+    return buildMetadata({
+      title: "المقال",
+      description: "تعذر تحميل البيانات حاليًا",
+      path: `/articles/${slug}`,
+    });
+  }
+
   return buildMetadata({
     title: article.title,
     description: article.excerpt || article.subtitle || article.title,
@@ -37,6 +46,27 @@ export async function generateMetadata({
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
+
+  if (article?.loadError) {
+    return (
+      <div className="mx-auto flex max-w-3xl flex-col gap-4 px-4 py-16 text-center md:px-6">
+        <Card className="space-y-3 p-8">
+          <h1 className="text-2xl font-black">تعذر تحميل البيانات حاليًا</h1>
+          <p className="text-muted-foreground text-sm leading-7">
+            يرجى المحاولة لاحقًا.
+          </p>
+          <Button asChild>
+            <Link href="/search">العودة إلى البحث</Link>
+          </Button>
+        </Card>
+      </div>
+    );
+  }
+
+  if (!article) {
+    notFound();
+  }
+
   const tags = (article.tags || []) as Array<Record<string, any>>;
   const comments = ((article.comments || []) as Array<Record<string, any>>).map(
     (comment) => ({
@@ -125,12 +155,15 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                     href={source.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="border-border/70 hover:bg-muted/20 focus-visible:ring-ring block rounded-2xl border px-4 py-3 transition-colors focus-visible:outline-none focus-visible:ring-2"
+                    className="border-border/70 hover:bg-muted/20 focus-visible:ring-ring block rounded-2xl border px-4 py-3 transition-colors focus-visible:ring-2 focus-visible:outline-none"
                   >
                     <p className="text-foreground font-semibold">
                       {source.title}
                     </p>
-                    <p className="text-muted-foreground mt-1 break-all text-sm" dir="ltr">
+                    <p
+                      className="text-muted-foreground mt-1 text-sm break-all"
+                      dir="ltr"
+                    >
                       {source.url}
                     </p>
                   </a>

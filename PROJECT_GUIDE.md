@@ -101,7 +101,7 @@ src/lib
 - `cloudinary.ts` دعم اختياري قديم للرفع عند توفر متغيرات Cloudinary.
 - `email.ts` إرسال البريد.
 - `utils.ts` دوال مساعدة مثل تنسيق التاريخ وتنظيف HTML.
-- `fallback-data.ts` بيانات احتياطية تظهر عند تعذر الوصول لقاعدة البيانات.
+- `fallback-data.ts` بيانات تطويرية اختيارية لا تظهر في الإنتاج إلا إذا تم تفعيل `ENABLE_FALLBACK_DATA`.
 
 ```text
 src/actions/platform-actions.ts
@@ -296,7 +296,7 @@ ChangeMe123!
 ## ملاحظات مهمة
 
 - الصور الخارجية المسموحة في `next.config.ts` تشمل Supabase Storage و Cloudinary و Unsplash.
-- إذا فشل الاتصال بقاعدة البيانات في بعض الصفحات العامة، يستخدم المشروع بيانات احتياطية من `src/lib/fallback-data.ts`.
+- في الإنتاج لا تُعرض بيانات احتياطية عند فشل قاعدة البيانات. يظهر فراغ أو رسالة خطأ نظيفة، وتبقى بيانات `src/lib/fallback-data.ts` مخصصة للتطوير أو عند تفعيل `ENABLE_FALLBACK_DATA`.
 - البحث يعمل عبر Meilisearch إذا كانت مفاتيحه مضبوطة، وإلا يستخدم بحثًا مباشرًا في قاعدة البيانات.
 - البريد لا يرسل فعليًا إلا إذا تم ضبط Resend أو SMTP.
 - رفع الصور إلى Supabase Storage يحتاج bucket عام للقراءة باسم `article-images` ومتغيرات Supabase في `.env`.

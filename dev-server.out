@@ -456,3 +456,9 @@ prisma:error (EMAXCONNSESSION) max clients reached in session mode - max clients
   Reload env: .env
 ✓ Compiled in 2.3s
 ✓ Compiled in 352ms
+✓ Compiled in 1316ms
+✓ Compiled in 160ms
+✓ Compiled in 117ms
+✓ Compiled in 75ms
+✓ Compiled in 106ms
+✓ Compiled in 78ms

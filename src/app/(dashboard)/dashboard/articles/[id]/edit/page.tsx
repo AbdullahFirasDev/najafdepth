@@ -2,8 +2,12 @@ import { notFound } from "next/navigation";
 
 import { ArticleForm } from "@/components/forms/article-form";
 import { auth } from "@/lib/auth";
-import { fallbackCategories } from "@/lib/fallback-data";
-import { canEditArticle, canModerateContent, canPublish } from "@/lib/permissions";
+import { logDataLoadError } from "@/lib/data";
+import {
+  canEditArticle,
+  canModerateContent,
+  canPublish,
+} from "@/lib/permissions";
 import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
@@ -26,19 +30,24 @@ export default async function EditArticlePage({
         select: { id: true, name: true },
         orderBy: { sortOrder: "asc" },
       })
-      .catch(() =>
-        fallbackCategories.map((category) => ({
-          id: category.id,
-          name: category.name,
-        })),
-      ),
+      .catch((error) => {
+        logDataLoadError(
+          "EditArticlePage",
+          "dashboard article category options",
+          error,
+        );
+        return [];
+      }),
     prisma.tag
       .findMany({ select: { id: true, name: true }, orderBy: { name: "asc" } })
-      .catch(() => [
-        { id: "tag-1", name: "النجف" },
-        { id: "tag-2", name: "الهوية" },
-        { id: "tag-3", name: "الكتّاب" },
-      ]),
+      .catch((error) => {
+        logDataLoadError(
+          "EditArticlePage",
+          "dashboard article tag options",
+          error,
+        );
+        return [];
+      }),
     prisma.article.findFirst({
       where: isModerator ? { id } : { id, authorId: session?.user.id },
       select: {

@@ -10,6 +10,32 @@ import { prisma } from "@/lib/prisma";
 import type { HomepageHeroSetting } from "@/types";
 import type { DashboardMetric, SearchFilters } from "@/types";
 
+export const DATA_LOAD_ERROR_MESSAGE = "تعذر تحميل البيانات حاليًا";
+
+export function canUseFallbackData() {
+  return (
+    process.env.NODE_ENV !== "production" ||
+    process.env.ENABLE_FALLBACK_DATA === "true"
+  );
+}
+
+function getErrorMessage(error: unknown) {
+  return error instanceof Error ? error.message : "Unknown error";
+}
+
+export function logDataLoadError(
+  route: string,
+  purpose: string,
+  error: unknown,
+) {
+  console.error("Data load failed", {
+    route,
+    purpose,
+    message: getErrorMessage(error),
+    timestamp: new Date().toISOString(),
+  });
+}
+
 const homepageArticleInclude = {
   category: true,
   author: {
@@ -141,25 +167,55 @@ export async function getHomepageData(): Promise<any> {
       }),
     ]);
 
+    const useFallback = canUseFallbackData();
+
     return {
       heroBanner: normalizeHomepageHeroSetting(heroSetting?.value),
       featuredArticle:
-        featuredArticle ?? latestArticles[0] ?? fallbackArticles[0],
-      latestArticles: latestArticles.length ? latestArticles : fallbackArticles,
+        featuredArticle ??
+        latestArticles[0] ??
+        (useFallback ? fallbackArticles[0] : null),
+      latestArticles: latestArticles.length
+        ? latestArticles
+        : useFallback
+          ? fallbackArticles
+          : [],
       trendingArticles: trendingArticles.length
         ? trendingArticles
-        : fallbackArticles,
-      categories: categories.length ? categories : fallbackCategories,
-      writers: writers.length ? writers : fallbackWriters,
+        : useFallback
+          ? fallbackArticles
+          : [],
+      categories: categories.length
+        ? categories
+        : useFallback
+          ? fallbackCategories
+          : [],
+      writers: writers.length ? writers : useFallback ? fallbackWriters : [],
+      loadError: null,
     };
-  } catch {
+  } catch (error) {
+    logDataLoadError("getHomepageData", "homepage public data", error);
+
+    if (canUseFallbackData()) {
+      return {
+        heroBanner: null,
+        featuredArticle: fallbackArticles[0],
+        latestArticles: fallbackArticles,
+        trendingArticles: fallbackArticles,
+        categories: fallbackCategories,
+        writers: fallbackWriters,
+        loadError: DATA_LOAD_ERROR_MESSAGE,
+      };
+    }
+
     return {
       heroBanner: null,
-      featuredArticle: fallbackArticles[0],
-      latestArticles: fallbackArticles,
-      trendingArticles: fallbackArticles,
-      categories: fallbackCategories,
-      writers: fallbackWriters,
+      featuredArticle: null,
+      latestArticles: [],
+      trendingArticles: [],
+      categories: [],
+      writers: [],
+      loadError: DATA_LOAD_ERROR_MESSAGE,
     };
   }
 }
@@ -171,16 +227,33 @@ export async function getArticleBySlug(slug: string): Promise<any> {
       include: homepageArticleInclude,
     });
 
-    return (
-      article ??
-      fallbackArticles.find((entry) => entry.slug === slug) ??
-      fallbackArticles[0]
+    if (article) {
+      return article;
+    }
+
+    if (canUseFallbackData()) {
+      return (
+        fallbackArticles.find((entry) => entry.slug === slug) ??
+        fallbackArticles[0]
+      );
+    }
+
+    return null;
+  } catch (error) {
+    logDataLoadError(
+      "getArticleBySlug",
+      `article details for slug ${slug}`,
+      error,
     );
-  } catch {
-    return (
-      fallbackArticles.find((entry) => entry.slug === slug) ??
-      fallbackArticles[0]
-    );
+
+    if (canUseFallbackData()) {
+      return (
+        fallbackArticles.find((entry) => entry.slug === slug) ??
+        fallbackArticles[0]
+      );
+    }
+
+    return { loadError: DATA_LOAD_ERROR_MESSAGE };
   }
 }
 
@@ -200,8 +273,20 @@ export async function getCategoryBySlug(slug: string): Promise<any> {
     if (category) {
       return category;
     }
-  } catch {
-    // fallback below
+  } catch (error) {
+    logDataLoadError(
+      "getCategoryBySlug",
+      `category page for slug ${slug}`,
+      error,
+    );
+
+    if (!canUseFallbackData()) {
+      return { loadError: DATA_LOAD_ERROR_MESSAGE };
+    }
+  }
+
+  if (!canUseFallbackData()) {
+    return null;
   }
 
   const matchedCategory =
@@ -242,8 +327,16 @@ export async function getAuthorBySlug(slug: string): Promise<any> {
     if (author) {
       return author;
     }
-  } catch {
-    // fallback below
+  } catch (error) {
+    logDataLoadError("getAuthorBySlug", `author page for slug ${slug}`, error);
+
+    if (!canUseFallbackData()) {
+      return { loadError: DATA_LOAD_ERROR_MESSAGE };
+    }
+  }
+
+  if (!canUseFallbackData()) {
+    return null;
   }
 
   const author =
@@ -298,15 +391,25 @@ export async function getSearchPageData(
 
     const hasSearchIntent = Boolean(
       query.trim() ||
-        filters?.category ||
-        filters?.author ||
-        filters?.tag ||
-        filters?.popularity,
+      filters?.category ||
+      filters?.author ||
+      filters?.tag ||
+      filters?.popularity,
     );
 
-    return results.length ? results : hasSearchIntent ? [] : fallbackArticles;
-  } catch {
-    return fallbackArticles;
+    if (results.length || hasSearchIntent) {
+      return results;
+    }
+
+    return canUseFallbackData() ? fallbackArticles : [];
+  } catch (error) {
+    logDataLoadError("getSearchPageData", "search article results", error);
+
+    if (canUseFallbackData()) {
+      return fallbackArticles;
+    }
+
+    return { results: [], loadError: DATA_LOAD_ERROR_MESSAGE };
   }
 }
 
@@ -368,10 +471,30 @@ export async function getDashboardData(): Promise<any> {
 
     return {
       metrics,
-      series: fallbackDashboardSeries,
-      topArticles: topArticles.length ? topArticles : fallbackArticles,
+      series: canUseFallbackData() ? fallbackDashboardSeries : [],
+      topArticles: topArticles.length
+        ? topArticles
+        : canUseFallbackData()
+          ? fallbackArticles
+          : [],
+      loadError: null,
     };
-  } catch {
+  } catch (error) {
+    logDataLoadError(
+      "getDashboardData",
+      "dashboard metrics and top articles",
+      error,
+    );
+
+    if (!canUseFallbackData()) {
+      return {
+        metrics: [],
+        series: [],
+        topArticles: [],
+        loadError: DATA_LOAD_ERROR_MESSAGE,
+      };
+    }
+
     return {
       metrics: [
         {
@@ -401,6 +524,7 @@ export async function getDashboardData(): Promise<any> {
       ],
       series: fallbackDashboardSeries,
       topArticles: fallbackArticles,
+      loadError: DATA_LOAD_ERROR_MESSAGE,
     };
   }
 }
