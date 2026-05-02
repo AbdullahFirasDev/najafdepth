@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 
 import { auth } from "@/lib/auth";
-import { getUploadSignature } from "@/lib/cloudinary";
 import { canAccessDashboard } from "@/lib/permissions";
 import {
   checkRequestRateLimit,
@@ -10,13 +9,13 @@ import {
 
 export async function GET(request: Request) {
   if (!isSameOriginRequest(request)) {
-    return NextResponse.json({ message: "طلب غير صالح." }, { status: 403 });
+    return NextResponse.json({ message: "Invalid request." }, { status: 403 });
   }
 
   const session = await auth();
 
   if (!session?.user || !canAccessDashboard(session)) {
-    return NextResponse.json({ message: "غير مصرح" }, { status: 401 });
+    return NextResponse.json({ message: "Unauthorized." }, { status: 401 });
   }
 
   const rate = checkRequestRateLimit(
@@ -27,23 +26,16 @@ export async function GET(request: Request) {
   );
   if (!rate.allowed) {
     return NextResponse.json(
-      { message: "تم تجاوز عدد الطلبات المسموح." },
+      { message: "Too many upload signature requests." },
       { status: 429 },
     );
   }
 
-  try {
-    const payload = getUploadSignature("alomq-najafi/articles");
-    return NextResponse.json(payload);
-  } catch (error) {
-    return NextResponse.json(
-      {
-        message:
-          process.env.NODE_ENV === "development" && error instanceof Error
-            ? error.message
-            : "تعذر إنشاء توقيع الرفع.",
-      },
-      { status: 500 },
-    );
-  }
+  return NextResponse.json(
+    {
+      message:
+        "Signed Cloudinary uploads are disabled. Use POST /api/uploads for server-side Supabase Storage uploads.",
+    },
+    { status: 410 },
+  );
 }

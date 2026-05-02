@@ -270,3 +270,80 @@ Import trace:
 https://nextjs.org/docs/messages/module-not-found
 
 
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error decryption operation failed {
+  message: 'decryption operation failed',
+  stack: 'JWEDecryptionFailed: decryption operation failed\n' +
+    '    at gcmDecrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:734:15)\n' +
+    '    at decrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:757:20)\n' +
+    '    at flattenedDecrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:2254:52)\n' +
+    '    at async compactDecrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:2308:23)\n' +
+    '    at async jwtDecrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:3770:23)\n' +
+    '    at async Object.decode (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_next-auth_0cj1~52._.js:725:25)\n' +
+    '    at async Object.session (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_next-auth_0cj1~52._.js:2038:34)\n' +
+    '    at async AuthHandler (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_next-auth_0cj1~52._.js:3184:37)\n' +
+    '    at async getServerSession (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_next-auth_0cj1~52._.js:3576:21)\n' +
+    '    at async DashboardLayout (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0e~p3x4._.js:733:21)',
+  name: 'JWEDecryptionFailed'
+}
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error decryption operation failed {
+  message: 'decryption operation failed',
+  stack: 'JWEDecryptionFailed: decryption operation failed\n' +
+    '    at gcmDecrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:734:15)\n' +
+    '    at decrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:757:20)\n' +
+    '    at flattenedDecrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:2254:52)\n' +
+    '    at async compactDecrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:2308:23)\n' +
+    '    at async jwtDecrypt (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_jose_dist_node_cjs_0iumao4._.js:3770:23)\n' +
+    '    at async Object.decode (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_next-auth_0cj1~52._.js:725:25)\n' +
+    '    at async Object.session (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_next-auth_0cj1~52._.js:2038:34)\n' +
+    '    at async AuthHandler (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_next-auth_0cj1~52._.js:3184:37)\n' +
+    '    at async getServerSession (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\node_modules_next-auth_0cj1~52._.js:3576:21)\n' +
+    '    at async SiteHeader (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0.6gcnc._.js:790:21)',
+  name: 'JWEDecryptionFailed'
+}
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error (EMAXCONNSESSION) max clients reached in session mode - max clients are limited to pool_size: 15 {
+  message: '(EMAXCONNSESSION) max clients reached in session mode - max clients are limited to pool_size: 15',
+  stack: 'DriverAdapterError: (EMAXCONNSESSION) max clients reached in session mode - max clients are limited to pool_size: 15\n' +
+    '    at PrismaPgAdapter.onError (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__04ca6nn._.js:7436:15)\n' +
+    '    at PrismaPgAdapter.performIO (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__04ca6nn._.js:7431:18)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async PrismaPgAdapter.queryRaw (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__04ca6nn._.js:7367:34)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:44614)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:45058)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43737)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:46278)\n' +
+    '    at async e.run (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43328)\n' +
+    '    at async e.execute (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:57:815)\n' +
+    '    at async jt.request (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:58:2399)\n' +
+    '    at async Object.singleLoader (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:65:6569)',
+  name: 'DriverAdapterError'
+}
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error (EMAXCONNSESSION) max clients reached in session mode - max clients are limited to pool_size: 15 {
+  message: '(EMAXCONNSESSION) max clients reached in session mode - max clients are limited to pool_size: 15',
+  stack: 'DriverAdapterError: (EMAXCONNSESSION) max clients reached in session mode - max clients are limited to pool_size: 15\n' +
+    '    at PrismaPgAdapter.onError (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__04ca6nn._.js:7436:15)\n' +
+    '    at PrismaPgAdapter.performIO (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__04ca6nn._.js:7431:18)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async PrismaPgAdapter.queryRaw (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__04ca6nn._.js:7367:34)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:44614)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:45058)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43737)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:46278)\n' +
+    '    at async e.run (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43328)\n' +
+    '    at async e.execute (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:57:815)\n' +
+    '    at async jt.request (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:58:2399)\n' +
+    '    at async Object.singleLoader (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:65:6569)',
+  name: 'DriverAdapterError'
+}

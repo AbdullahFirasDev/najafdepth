@@ -31,7 +31,7 @@ interface ArticleEditorProps {
   onChange: (value: string) => void;
 }
 
-const MAX_UPLOAD_SIZE = 8 * 1024 * 1024;
+const MAX_UPLOAD_SIZE = 5 * 1024 * 1024;
 const ALLOWED_IMAGE_TYPES = new Set(["image/jpeg", "image/png", "image/webp"]);
 
 const editorClassName =
@@ -101,7 +101,7 @@ export function ArticleEditor({ value, onChange }: ArticleEditorProps) {
     }
 
     if (file.size > MAX_UPLOAD_SIZE) {
-      toast.error("حجم الصورة يتجاوز 8 ميغابايت.");
+      toast.error("حجم الصورة يتجاوز 5 ميغابايت.");
       return;
     }
 

@@ -24,7 +24,8 @@ export function isSafeImageSrc(input: string | null | undefined) {
     const url = new URL(input);
     return (
       (url.protocol === "http:" || url.protocol === "https:") &&
-      allowedRemoteImageHosts.has(url.hostname)
+      (allowedRemoteImageHosts.has(url.hostname) ||
+        url.hostname.endsWith(".supabase.co"))
     );
   } catch {
     return false;

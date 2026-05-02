@@ -12,7 +12,7 @@
 - إدارة المقالات وحالات النشر والمراجعة.
 - إدارة الأقسام والوسوم والتعليقات والمستخدمين.
 - بحث ذكي عبر Meilisearch عند توفره، مع بديل يعتمد على قاعدة البيانات.
-- رفع صور عبر Cloudinary عند ضبط المفاتيح.
+- رفع صور المقالات عبر Supabase Storage بشكل افتراضي.
 - إرسال بريد عبر Resend أو SMTP عند ضبط الإعدادات.
 - تصدير المقالات كملف PDF.
 
@@ -29,7 +29,7 @@
 - TipTap لمحرر المقالات.
 - Recharts للرسوم والتحليلات.
 - Meilisearch للبحث الاختياري.
-- Cloudinary لرفع الصور الاختياري.
+- Supabase Storage لرفع صور المقالات.
 - Resend أو Nodemailer لإرسال البريد.
 
 ## أهم الملفات والمجلدات
@@ -97,7 +97,8 @@ src/lib
 - `data.ts` جلب بيانات الصفحات العامة.
 - `validations.ts` مخططات التحقق.
 - `meilisearch.ts` البحث والفهرسة.
-- `cloudinary.ts` رفع الصور.
+- `supabase-storage.ts` رفع صور المقالات إلى Supabase Storage.
+- `cloudinary.ts` دعم اختياري قديم للرفع عند توفر متغيرات Cloudinary.
 - `email.ts` إرسال البريد.
 - `utils.ts` دوال مساعدة مثل تنسيق التاريخ وتنظيف HTML.
 - `fallback-data.ts` بيانات احتياطية تظهر عند تعذر الوصول لقاعدة البيانات.
@@ -192,6 +193,9 @@ DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?sslmode=require"
 NEXTAUTH_URL="http://localhost:3000"
 NEXTAUTH_SECRET="replace-with-a-long-random-secret"
 SITE_URL="http://localhost:3000"
+NEXT_PUBLIC_SUPABASE_URL=""
+SUPABASE_SERVICE_ROLE_KEY=""
+SUPABASE_STORAGE_BUCKET="article-images"
 MEILISEARCH_HOST=""
 MEILISEARCH_ADMIN_KEY=""
 CLOUDINARY_CLOUD_NAME=""
@@ -203,7 +207,7 @@ ADMIN_EMAIL=""
 ADMIN_PASSWORD=""
 ```
 
-ملاحظة: Meilisearch و Cloudinary و Resend اختيارية. إذا لم تضبطها، توجد بدائل أو يتم تخطي الوظيفة.
+ملاحظة: Supabase Storage هو الخيار الافتراضي لرفع صور المقالات. يجب إبقاء `SUPABASE_SERVICE_ROLE_KEY` على الخادم فقط. Meilisearch و Cloudinary و Resend اختيارية.
 
 ## أوامر التشغيل
 
@@ -286,16 +290,16 @@ ChangeMe123!
 - `src/app/api/auth/[...nextauth]/route.ts` تسجيل الدخول والجلسات.
 - `src/app/api/search/route.ts` البحث.
 - `src/app/api/uploads/route.ts` رفع الصور.
-- `src/app/api/uploads/sign/route.ts` توقيع رفع Cloudinary.
+- `src/app/api/uploads/sign/route.ts` معطل لرفع Cloudinary الموقع، والرفع يتم خادميًا عبر Supabase Storage.
 - `src/app/api/articles/[slug]/pdf/route.tsx` تصدير المقال PDF.
 
 ## ملاحظات مهمة
 
-- الصور الخارجية المسموحة في `next.config.ts` حاليًا هي Cloudinary و Unsplash. إذا أضفت صورًا من نطاق آخر يجب إضافته إلى إعدادات `images.remotePatterns`.
+- الصور الخارجية المسموحة في `next.config.ts` تشمل Supabase Storage و Cloudinary و Unsplash.
 - إذا فشل الاتصال بقاعدة البيانات في بعض الصفحات العامة، يستخدم المشروع بيانات احتياطية من `src/lib/fallback-data.ts`.
 - البحث يعمل عبر Meilisearch إذا كانت مفاتيحه مضبوطة، وإلا يستخدم بحثًا مباشرًا في قاعدة البيانات.
 - البريد لا يرسل فعليًا إلا إذا تم ضبط Resend أو SMTP.
-- رفع الصور إلى Cloudinary يحتاج ضبط متغيرات Cloudinary في `.env`.
+- رفع الصور إلى Supabase Storage يحتاج bucket عام للقراءة باسم `article-images` ومتغيرات Supabase في `.env`.
 
 ## طريقة العمل العامة داخل المشروع
 
