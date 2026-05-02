@@ -1,0 +1,171 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e99]:
+    - complementary [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - img [ref=e104]
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: العمق النجفي
+            - paragraph [ref=e111]: نظرة عامة
+        - button "فتح تنقل لوحة التحكم" [ref=e112]:
+          - img [ref=e113]
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - heading "لوحة التحكم" [level=1] [ref=e117]
+          - paragraph [ref=e118]: مرحبًا هيئة التحرير. يمكنك إدارة المحتوى من هنا.
+        - button "تسجيل الخروج" [ref=e120]:
+          - img [ref=e121]
+          - text: تسجيل الخروج
+      - generic [ref=e124]:
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - paragraph [ref=e128]: المستخدمون
+              - generic [ref=e129]: +12%
+            - paragraph [ref=e130]: "4"
+            - paragraph [ref=e131]: إجمالي الحسابات النشطة داخل المنصة
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - paragraph [ref=e134]: الطلبات الجديدة
+              - generic [ref=e135]: +4 هذا الأسبوع
+            - paragraph [ref=e136]: "0"
+            - paragraph [ref=e137]: طلبات كتاب بانتظار المراجعة
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - paragraph [ref=e140]: المقالات
+              - generic [ref=e141]: +8%
+            - paragraph [ref=e142]: "4"
+            - paragraph [ref=e143]: مواد منشورة ومسودات داخل سير العمل
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - paragraph [ref=e146]: الإعجابات
+              - generic [ref=e147]: مباشر
+            - paragraph [ref=e148]: "212"
+            - paragraph [ref=e149]: إجمالي الإعجابات المسجلة على المقالات
+          - generic [ref=e150]:
+            - generic [ref=e151]:
+              - paragraph [ref=e152]: التعليقات المعلقة
+              - generic [ref=e153]: "-3 اليوم"
+            - paragraph [ref=e154]: "0"
+            - paragraph [ref=e155]: تعليقات تنتظر المراجعة الإدارية
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - heading "تحليلات الأداء" [level=3] [ref=e159]
+              - paragraph [ref=e160]: قراءات يومية وتفاعل القراء خلال الأسبوع الجاري.
+            - application [ref=e164]:
+              - generic [ref=e178]:
+                - generic [ref=e179]:
+                  - generic [ref=e181]: السبت
+                  - generic [ref=e183]: الاثنين
+                  - generic [ref=e185]: الأربعاء
+                  - generic [ref=e187]: الجمعة
+                - generic [ref=e188]:
+                  - generic [ref=e190]: "0"
+                  - generic [ref=e192]: "300"
+                  - generic [ref=e194]: "600"
+                  - generic [ref=e196]: "900"
+                  - generic [ref=e198]: "1200"
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - heading "أفضل المواد أداءً" [level=2] [ref=e201]
+              - paragraph [ref=e202]: أكثر المقالات قراءة وتفاعلاً خلال الفترة الحالية.
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - link "قراءة النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [ref=e205] [cursor=pointer]:
+                  - /url: /articles/najaf-and-the-architecture-of-memory
+                  - img "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [ref=e206]
+                - generic [ref=e207]:
+                  - generic [ref=e208]:
+                    - generic [ref=e209]: تاريخ وذاكرة
+                    - time [ref=e210]: ١٨ نيسان ٢٠٢٦
+                  - generic [ref=e211]:
+                    - heading "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [level=3] [ref=e212]:
+                      - link "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [ref=e213] [cursor=pointer]:
+                        - /url: /articles/najaf-and-the-architecture-of-memory
+                    - paragraph [ref=e214]: قراءة في العلاقة بين الصحافة الثقافية الجديدة ومفهوم الذاكرة المدينية، وكيف يمكن للهوية النجفية أن تُترجم إلى منصة نشر معاصرة.
+                  - generic [ref=e215]:
+                    - generic [ref=e216]:
+                      - generic [ref=e217]: سارة الموسوي
+                      - generic [ref=e218]:
+                        - img [ref=e219]
+                        - text: 1 د
+                    - link "قراءة" [ref=e222] [cursor=pointer]:
+                      - /url: /articles/najaf-and-the-architecture-of-memory
+                      - text: قراءة
+                      - img [ref=e223]
+              - generic [ref=e225]:
+                - 'link "قراءة مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e226] [cursor=pointer]':
+                  - /url: /articles/book-review-arabic-cultural-magazines
+                  - 'img "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e227]'
+                - generic [ref=e228]:
+                  - generic [ref=e229]:
+                    - generic [ref=e230]: أدب ونقد
+                    - time [ref=e231]: ١٥ نيسان ٢٠٢٦
+                  - generic [ref=e232]:
+                    - 'heading "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [level=3] [ref=e233]':
+                      - 'link "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e234] [cursor=pointer]':
+                        - /url: /articles/book-review-arabic-cultural-magazines
+                    - paragraph [ref=e235]: مراجعة كتاب تستعيد أثر المجلات الثقافية في تشكيل الذائقة واللغة النقدية.
+                  - generic [ref=e236]:
+                    - generic [ref=e237]:
+                      - generic [ref=e238]: سارة الموسوي
+                      - generic [ref=e239]:
+                        - img [ref=e240]
+                        - text: 6 د
+                    - link "قراءة" [ref=e243] [cursor=pointer]:
+                      - /url: /articles/book-review-arabic-cultural-magazines
+                      - text: قراءة
+                      - img [ref=e244]
+              - generic [ref=e246]:
+                - link "قراءة تجربة الكتابة في منصة النجف" [ref=e247] [cursor=pointer]:
+                  - /url: /articles/alal
+                  - img "تجربة الكتابة في منصة النجف" [ref=e248]
+                - generic [ref=e249]:
+                  - generic [ref=e250]:
+                    - generic [ref=e251]: فكر ومعرفة
+                    - time [ref=e252]: ٢٠ نيسان ٢٠٢٦
+                  - generic [ref=e253]:
+                    - heading "تجربة الكتابة في منصة النجف" [level=3] [ref=e254]:
+                      - link "تجربة الكتابة في منصة النجف" [ref=e255] [cursor=pointer]:
+                        - /url: /articles/alal
+                    - paragraph [ref=e256]: ملخص تجريبي للكتابة في هذه المنصة الرائعة
+                  - generic [ref=e257]:
+                    - generic [ref=e258]:
+                      - generic [ref=e259]: هيئة التحرير
+                      - generic [ref=e260]:
+                        - img [ref=e261]
+                        - text: 1 د
+                    - link "قراءة" [ref=e264] [cursor=pointer]:
+                      - /url: /articles/alal
+                      - text: قراءة
+                      - img [ref=e265]
+              - generic [ref=e267]:
+                - link "قراءة الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [ref=e268] [cursor=pointer]:
+                  - /url: /articles/alshykh-akrm-alkaby
+                  - img "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [ref=e269]
+                - generic [ref=e270]:
+                  - generic [ref=e271]:
+                    - generic [ref=e272]: تاريخ وذاكرة
+                    - time [ref=e273]: ٢٩ نيسان ٢٠٢٦
+                  - generic [ref=e274]:
+                    - heading "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [level=3] [ref=e275]:
+                      - link "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [ref=e276] [cursor=pointer]:
+                        - /url: /articles/alshykh-akrm-alkaby
+                    - paragraph [ref=e277]: أكرم عباس الكعبي (وُلد في 17 يونيو 1977) هو الأمين العام لحركة النجباء، احد فصائل المقاومة الإسلامية في العراق ، وهو احد المطلوبين من قبل سلطة مكافحة الإرهاب بعد ادراج وزارة الخارجية الأمريكية إسمه على قائمة الإرهابيين الدوليين بموجب الأمر التنفيذي رقم 13224 الصادر عن سلطة مكافحة الإرهاب ، لتورطه في تنفيذ هجمات ضد قوات التحالف ومواطنين عراقيين أبرياء.
+                  - generic [ref=e278]:
+                    - generic [ref=e279]:
+                      - generic [ref=e280]: هيئة التحرير
+                      - generic [ref=e281]:
+                        - img [ref=e282]
+                        - text: 1 د
+                    - link "قراءة" [ref=e285] [cursor=pointer]:
+                      - /url: /articles/alshykh-akrm-alkaby
+                      - text: قراءة
+                      - img [ref=e286]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e80] [cursor=pointer]:
+    - img [ref=e81]
+  - alert [ref=e84]: العمق النجفي
+  - generic [ref=e288]: "0"

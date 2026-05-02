@@ -1,0 +1,128 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "ع العمق النجفي" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: ع
+          - paragraph [ref=e8]: العمق النجفي
+        - button "تبديل النمط" [ref=e10]:
+          - img [ref=e11]
+        - navigation "التنقل السفلي" [ref=e13]:
+          - generic [ref=e14]:
+            - link "الرئيسية" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - img [ref=e16]
+              - generic [ref=e19]: الرئيسية
+            - link "الأقسام" [ref=e20] [cursor=pointer]:
+              - /url: /#categories
+              - img [ref=e21]
+              - generic [ref=e26]: الأقسام
+            - link "البحث" [ref=e27] [cursor=pointer]:
+              - /url: /search
+              - img [ref=e28]
+              - generic [ref=e31]: البحث
+            - link "الكتّاب" [ref=e32] [cursor=pointer]:
+              - /url: /authors/sara-almousawi
+              - img [ref=e33]
+              - generic [ref=e38]: الكتّاب
+            - link "حسابي" [ref=e39] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e40]
+              - generic [ref=e44]: حسابي
+    - main [ref=e45]:
+      - generic [ref=e46]:
+        - region "البحث والتصفية" [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: بحث سريع
+              - heading "ابحث في المقالات والكتّاب" [level=1] [ref=e51]
+              - paragraph [ref=e52]: 0 نتيجة معروضة
+            - search "بحث في المنصة" [ref=e53]:
+              - generic [ref=e54]:
+                - img
+                - textbox "نص البحث" [ref=e55]:
+                  - /placeholder: عنوان، كاتب، وسم...
+              - button "بحث" [ref=e56]
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]:
+                  - img [ref=e60]
+                  - generic [ref=e61]: الفلاتر
+                - button "مسح الفلاتر" [ref=e62]:
+                  - img [ref=e63]
+                  - text: مسح الفلاتر
+              - generic [ref=e66]:
+                - paragraph [ref=e67]: الأقسام
+                - generic [ref=e68]:
+                  - button "كل الأقسام" [ref=e69]:
+                    - generic [ref=e71]: كل الأقسام
+                  - button "فكر ومعرفة 1" [ref=e72]:
+                    - generic [ref=e73]:
+                      - generic [ref=e74]: فكر ومعرفة
+                      - generic [ref=e75]: "1"
+                  - button "أدب ونقد 1" [ref=e76]:
+                    - generic [ref=e77]:
+                      - generic [ref=e78]: أدب ونقد
+                      - generic [ref=e79]: "1"
+                  - button "تاريخ وذاكرة 2" [ref=e80]:
+                    - generic [ref=e81]:
+                      - generic [ref=e82]: تاريخ وذاكرة
+                      - generic [ref=e83]: "2"
+              - generic [ref=e84]:
+                - paragraph [ref=e85]: الوسوم
+                - generic [ref=e86]:
+                  - button "#النجف" [pressed] [ref=e87]:
+                    - generic [ref=e89]: "#النجف"
+                  - button "#الهوية" [ref=e90]:
+                    - generic [ref=e92]: "#الهوية"
+                  - button "#الذاكرة" [ref=e93]:
+                    - generic [ref=e95]: "#الذاكرة"
+                  - button "#الحداثة" [ref=e96]:
+                    - generic [ref=e98]: "#الحداثة"
+                  - button "#الكتاب" [ref=e99]:
+                    - generic [ref=e101]: "#الكتاب"
+                  - button "#الصحافة الثقافية" [ref=e102]:
+                    - generic [ref=e104]: "#الصحافة الثقافية"
+              - generic [ref=e105]:
+                - paragraph [ref=e106]: الترتيب
+                - generic [ref=e107]:
+                  - button "الأحدث" [ref=e108]:
+                    - generic [ref=e110]: الأحدث
+                  - button "الأكثر تداولًا" [pressed] [ref=e111]:
+                    - generic [ref=e113]: الأكثر تداولًا
+                  - button "الأكثر قراءة" [ref=e114]:
+                    - generic [ref=e116]: الأكثر قراءة
+        - region "نتائج البحث" [ref=e117]:
+          - generic [ref=e119]:
+            - heading "نتائج البحث" [level=2] [ref=e120]
+            - paragraph [ref=e121]: يتم تحديث النتائج عند تغيير البحث أو الفلاتر.
+          - generic [ref=e122]:
+            - heading "لم يتم العثور على نتائج مطابقة" [level=3] [ref=e123]
+            - paragraph [ref=e124]: جرّب كلمات أقل أو أزل بعض الفلاتر.
+    - contentinfo [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - heading "العمق النجفي" [level=3] [ref=e128]
+          - paragraph [ref=e129]: منصة عربية للنشر الثقافي والتحرير المعرفي.
+          - paragraph [ref=e130]: معرفة واضحة، وتحرير رصين.
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - heading "التنقل" [level=4] [ref=e133]
+            - generic [ref=e134]:
+              - link "الرئيسية" [ref=e135] [cursor=pointer]:
+                - /url: /
+              - link "الأقسام" [ref=e136] [cursor=pointer]:
+                - /url: /#categories
+              - link "البحث" [ref=e137] [cursor=pointer]:
+                - /url: /search
+              - link "الكتّاب" [ref=e138] [cursor=pointer]:
+                - /url: /authors/sara-almousawi
+              - link "التقديم ككاتب" [ref=e139] [cursor=pointer]:
+                - /url: /apply
+          - generic [ref=e140]:
+            - heading "عن المنصة" [level=4] [ref=e141]
+            - paragraph [ref=e142]: مساحة للنشر الثقافي العربي، تجمع المقالات والملفات والكتّاب ضمن تجربة قراءة واضحة.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e148] [cursor=pointer]:
+    - img [ref=e149]

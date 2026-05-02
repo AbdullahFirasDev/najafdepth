@@ -1,0 +1,406 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum RoleName {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+  WRITER
+  READER
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+  INVITED
+}
+
+enum WriterApplicationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  CHANGES_REQUESTED
+}
+
+enum ArticleStatus {
+  DRAFT
+  PENDING_REVIEW
+  NEEDS_REVISION
+  APPROVED
+  SCHEDULED
+  PUBLISHED
+  REJECTED
+}
+
+enum CommentStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  SPAM
+}
+
+enum NotificationType {
+  SYSTEM
+  ARTICLE
+  REVIEW
+  COMMENT
+  APPLICATION
+}
+
+enum AnalyticsMetric {
+  DAILY_VIEWS
+  ARTICLE_VIEWS
+  LIKES
+  BOOKMARKS
+  COMMENTS
+  APPLICATIONS
+  FOLLOWERS
+}
+
+model Role {
+  id          String   @id @default(cuid())
+  name        RoleName @unique
+  description String?
+  users       User[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model User {
+  id                   String              @id @default(cuid())
+  email                String              @unique
+  username             String?             @unique
+  passwordHash         String?
+  name                 String
+  image                String?
+  bio                  String?
+  specialty            String?
+  isActive             Boolean             @default(true)
+  status               UserStatus          @default(ACTIVE)
+  emailVerified        DateTime?
+  lastLoginAt          DateTime?
+  roleId               String
+  role                 Role                @relation(fields: [roleId], references: [id], onDelete: Restrict)
+  profile              Profile?
+  accounts             Account[]
+  sessions             Session[]
+  authoredArticles     Article[]           @relation("ArticleAuthor")
+  reviewedArticles     Article[]           @relation("ArticleReviewer")
+  comments             Comment[]
+  bookmarks            Bookmark[]
+  likes                ArticleLike[]
+  followerLinks        Follower[]          @relation("FollowingUser")
+  followingLinks       Follower[]          @relation("FollowerUser")
+  notifications        Notification[]
+  views                View[]
+  settingsUpdated      Setting[]           @relation("SettingsUpdater")
+  auditLogs            AuditLog[]          @relation("AuditActor")
+  writerApplications   WriterApplication[] @relation("ApplicationReviewer")
+  approvedApplications WriterApplication[] @relation("ApplicationApprovedUser")
+  createdAt            DateTime            @default(now())
+  updatedAt            DateTime            @updatedAt
+}
+
+model Profile {
+  id            String    @id @default(cuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  headline      String?
+  location      String?
+  website       String?
+  socialLinks   Json?
+  expertise     Json?
+  awards        Json?
+  birthDate     DateTime?
+  joinedAt      DateTime  @default(now())
+  themeChoice   String?   @default("system")
+  readingTarget Int?      @default(20)
+}
+
+model WriterApplication {
+  id               String                  @id @default(cuid())
+  name             String
+  email            String                  @unique
+  bio              String
+  specialty        String
+  writingSamples   Json
+  socialLinks      Json?
+  status           WriterApplicationStatus @default(PENDING)
+  reviewerId       String?
+  reviewer         User?                   @relation("ApplicationReviewer", fields: [reviewerId], references: [id], onDelete: SetNull)
+  reviewNotes      String?
+  requestedChanges String?
+  approvedUserId   String?
+  approvedUser     User?                   @relation("ApplicationApprovedUser", fields: [approvedUserId], references: [id], onDelete: SetNull)
+  createdAt        DateTime                @default(now())
+  updatedAt        DateTime                @updatedAt
+
+  @@index([status])
+  @@index([email])
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  color       String?
+  coverImage  String?
+  sortOrder   Int       @default(0)
+  articles    Article[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([sortOrder])
+}
+
+model Tag {
+  id        String       @id @default(cuid())
+  name      String
+  slug      String       @unique
+  articles  ArticleTag[]
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+}
+
+model Article {
+  id                 String         @id @default(cuid())
+  title              String
+  subtitle           String?
+  slug               String         @unique
+  excerpt            String?
+  coverImage         String?
+  contentHtml        String
+  contentJson        Json?
+  quote              String?
+  sources            Json?
+  seoTitle           String?
+  seoDescription     String?
+  readingTimeMinutes Int            @default(5)
+  featured           Boolean        @default(false)
+  featuredRank       Int?           @unique
+  allowComments      Boolean        @default(true)
+  status             ArticleStatus  @default(DRAFT)
+  reviewNotes        String?
+  scheduledFor       DateTime?
+  publishedAt        DateTime?
+  trendingScore      Int            @default(0)
+  likesCount         Int            @default(0)
+  bookmarksCount     Int            @default(0)
+  viewsCount         Int            @default(0)
+  authorId           String
+  reviewerId         String?
+  categoryId         String
+  author             User           @relation("ArticleAuthor", fields: [authorId], references: [id], onDelete: Restrict)
+  reviewer           User?          @relation("ArticleReviewer", fields: [reviewerId], references: [id], onDelete: SetNull)
+  category           Category       @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  images             ArticleImage[]
+  tags               ArticleTag[]
+  comments           Comment[]
+  bookmarks          Bookmark[]
+  likes              ArticleLike[]
+  views              View[]
+  analytics          Analytics[]
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+
+  @@index([status, publishedAt])
+  @@index([categoryId])
+  @@index([authorId])
+  @@index([featured, featuredRank, trendingScore])
+}
+
+model ArticleImage {
+  id        String  @id @default(cuid())
+  articleId String
+  url       String
+  alt       String?
+  caption   String?
+  sortOrder Int     @default(0)
+  article   Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@index([articleId, sortOrder])
+}
+
+model ArticleTag {
+  articleId String
+  tagId     String
+  article   Article @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  tag       Tag     @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([articleId, tagId])
+  @@index([tagId])
+}
+
+model Comment {
+  id         String        @id @default(cuid())
+  articleId  String
+  authorId   String
+  parentId   String?
+  content    String
+  status     CommentStatus @default(PENDING)
+  likesCount Int           @default(0)
+  article    Article       @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  author     User          @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  parent     Comment?      @relation("CommentReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  replies    Comment[]     @relation("CommentReplies")
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+
+  @@index([articleId, status])
+  @@index([authorId])
+}
+
+model Bookmark {
+  userId    String
+  articleId String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@id([userId, articleId])
+  @@index([articleId])
+}
+
+model ArticleLike {
+  userId    String
+  articleId String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@id([userId, articleId])
+  @@index([articleId])
+}
+
+model Follower {
+  followerId  String
+  followingId String
+  follower    User     @relation("FollowerUser", fields: [followerId], references: [id], onDelete: Cascade)
+  following   User     @relation("FollowingUser", fields: [followingId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+
+  @@id([followerId, followingId])
+  @@index([followingId])
+}
+
+model Notification {
+  id        String           @id @default(cuid())
+  userId    String
+  title     String
+  body      String
+  type      NotificationType @default(SYSTEM)
+  link      String?
+  readAt    DateTime?
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime         @default(now())
+
+  @@index([userId, readAt])
+}
+
+model View {
+  id        String   @id @default(cuid())
+  articleId String
+  userId    String?
+  ipHash    String?
+  userAgent String?
+  referrer  String?
+  article   Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  viewedAt  DateTime @default(now())
+
+  @@index([articleId, viewedAt])
+  @@index([userId])
+}
+
+model Analytics {
+  id         String          @id @default(cuid())
+  articleId  String?
+  metric     AnalyticsMetric
+  dimension  String?
+  value      Int
+  recordedAt DateTime        @default(now())
+  article    Article?        @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@index([metric, recordedAt])
+}
+
+model Setting {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  label       String
+  value       Json
+  description String?
+  isPublic    Boolean  @default(false)
+  updatedById String?
+  updatedBy   User?    @relation("SettingsUpdater", fields: [updatedById], references: [id], onDelete: SetNull)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?
+  action    String
+  entity    String
+  entityId  String?
+  changes   Json?
+  ipHash    String?
+  userAgent String?
+  actor     User?    @relation("AuditActor", fields: [actorId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+
+  @@index([entity, entityId])
+  @@index([actorId])
+}
+
+model NewsletterSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}

@@ -1,0 +1,323 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "ع العمق النجفي منصة ثقافية عربية" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: ع
+          - generic [ref=e7]:
+            - paragraph [ref=e8]: العمق النجفي
+            - paragraph [ref=e9]: منصة ثقافية عربية
+        - navigation "التنقل الرئيسي" [ref=e10]:
+          - link "الرئيسية" [ref=e11] [cursor=pointer]:
+            - /url: /
+          - link "الأقسام" [ref=e12] [cursor=pointer]:
+            - /url: /#categories
+          - link "البحث" [ref=e13] [cursor=pointer]:
+            - /url: /search
+          - link "الكتّاب" [ref=e14] [cursor=pointer]:
+            - /url: /authors/sara-almousawi
+          - link "التقديم ككاتب" [ref=e15] [cursor=pointer]:
+            - /url: /apply
+        - generic [ref=e16]:
+          - button "تبديل النمط" [ref=e17]:
+            - img [ref=e18]
+          - link "لوحة التحكم" [ref=e20] [cursor=pointer]:
+            - /url: /dashboard
+          - link "إنشاء مقال" [ref=e21] [cursor=pointer]:
+            - /url: /dashboard/articles/new
+            - img [ref=e22]
+            - text: إنشاء مقال
+    - main [ref=e25]:
+      - generic [ref=e26]:
+        - region "البحث والتصفية" [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - paragraph [ref=e30]: بحث سريع
+              - heading "ابحث في المقالات والكتّاب" [level=1] [ref=e31]
+            - search "بحث في المنصة" [ref=e32]:
+              - generic [ref=e33]:
+                - img
+                - textbox "نص البحث" [ref=e34]:
+                  - /placeholder: عنوان، كاتب، وسم...
+              - button "بحث" [ref=e35]
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - img [ref=e38]
+                - generic [ref=e39]: الفلاتر
+              - generic [ref=e40]:
+                - button "كل الأقسام" [ref=e41]
+                - button "فكر ومعرفة" [ref=e42]
+                - button "أدب ونقد" [ref=e43]
+                - button "تاريخ وذاكرة" [ref=e44]
+              - generic [ref=e45]:
+                - button "#النجف" [ref=e46]
+                - button "#الهوية" [ref=e47]
+                - button "#الذاكرة" [ref=e48]
+                - button "#الحداثة" [ref=e49]
+                - button "#الكتاب" [ref=e50]
+                - button "#الصحافة الثقافية" [ref=e51]
+        - generic [ref=e52]:
+          - img "منصة ثقافية نجفية تستلهم ذاكرة النجف و عمقها التاريخي" [ref=e53]
+          - generic [ref=e55]:
+            - generic [ref=e56]:
+              - generic [ref=e57]: العمق النجفي
+              - generic [ref=e58]:
+                - heading "منصة ثقافية نجفية تستلهم ذاكرة النجف و عمقها التاريخي" [level=1] [ref=e59]
+                - paragraph [ref=e60]: العمق النجفي هي اصل النجف
+              - generic [ref=e61]:
+                - link "استكشف المقالات" [ref=e62] [cursor=pointer]:
+                  - /url: /search
+                  - text: استكشف المقالات
+                  - img [ref=e63]
+                - link "المقال المميز" [ref=e65] [cursor=pointer]:
+                  - /url: /articles/najaf-and-the-architecture-of-memory
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - img [ref=e69]
+                - generic [ref=e72]: مادة مختارة
+              - generic [ref=e73]:
+                - generic [ref=e74]: تاريخ وذاكرة
+                - heading "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [level=2] [ref=e75]
+                - paragraph [ref=e76]: كيف تستعيد المنصات الحديثة روح المدينة من دون أن تفقد صرامتها التحريرية
+              - generic [ref=e77]:
+                - generic [ref=e78]:
+                  - paragraph [ref=e79]: الكاتب
+                  - paragraph [ref=e80]: سارة الموسوي
+                - generic [ref=e81]:
+                  - paragraph [ref=e82]: النشر
+                  - paragraph [ref=e83]: ١٨ نيسان ٢٠٢٦
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - generic [ref=e87]: المقالات
+              - generic [ref=e88]:
+                - heading "أحدث المواد المنشورة" [level=2] [ref=e89]
+                - paragraph [ref=e90]: اختيارات تحريرية موجزة وواضحة للقراءة اليومية.
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - link "قراءة الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [ref=e93] [cursor=pointer]:
+                  - /url: /articles/alshykh-akrm-alkaby
+                  - img "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [ref=e94]
+                - generic [ref=e95]:
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: تاريخ وذاكرة
+                    - time [ref=e98]: ٢٩ نيسان ٢٠٢٦
+                  - generic [ref=e99]:
+                    - heading "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [level=3] [ref=e100]:
+                      - link "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [ref=e101] [cursor=pointer]:
+                        - /url: /articles/alshykh-akrm-alkaby
+                    - paragraph [ref=e102]: أكرم عباس الكعبي (وُلد في 17 يونيو 1977) هو الأمين العام لحركة النجباء، احد فصائل المقاومة الإسلامية في العراق ، وهو احد المطلوبين من قبل سلطة مكافحة الإرهاب بعد ادراج وزارة الخارجية الأمريكية إسمه على قائمة الإرهابيين الدوليين بموجب الأمر التنفيذي رقم 13224 الصادر عن سلطة مكافحة الإرهاب ، لتورطه في تنفيذ هجمات ضد قوات التحالف ومواطنين عراقيين أبرياء.
+                  - generic [ref=e103]:
+                    - generic [ref=e104]:
+                      - generic [ref=e105]: هيئة التحرير
+                      - generic [ref=e106]:
+                        - img [ref=e107]
+                        - text: 1 د
+                    - link "قراءة" [ref=e110] [cursor=pointer]:
+                      - /url: /articles/alshykh-akrm-alkaby
+                      - text: قراءة
+                      - img [ref=e111]
+              - generic [ref=e113]:
+                - link "قراءة تجربة الكتابة في منصة النجف" [ref=e114] [cursor=pointer]:
+                  - /url: /articles/alal
+                  - img "تجربة الكتابة في منصة النجف" [ref=e115]
+                - generic [ref=e116]:
+                  - generic [ref=e117]:
+                    - generic [ref=e118]: فكر ومعرفة
+                    - time [ref=e119]: ٢٠ نيسان ٢٠٢٦
+                  - generic [ref=e120]:
+                    - heading "تجربة الكتابة في منصة النجف" [level=3] [ref=e121]:
+                      - link "تجربة الكتابة في منصة النجف" [ref=e122] [cursor=pointer]:
+                        - /url: /articles/alal
+                    - paragraph [ref=e123]: ملخص تجريبي للكتابة في هذه المنصة الرائعة
+                  - generic [ref=e124]:
+                    - generic [ref=e125]:
+                      - generic [ref=e126]: هيئة التحرير
+                      - generic [ref=e127]:
+                        - img [ref=e128]
+                        - text: 1 د
+                    - link "قراءة" [ref=e131] [cursor=pointer]:
+                      - /url: /articles/alal
+                      - text: قراءة
+                      - img [ref=e132]
+              - generic [ref=e134]:
+                - link "قراءة النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [ref=e135] [cursor=pointer]:
+                  - /url: /articles/najaf-and-the-architecture-of-memory
+                  - img "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [ref=e136]
+                - generic [ref=e137]:
+                  - generic [ref=e138]:
+                    - generic [ref=e139]: تاريخ وذاكرة
+                    - time [ref=e140]: ١٨ نيسان ٢٠٢٦
+                  - generic [ref=e141]:
+                    - heading "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [level=3] [ref=e142]:
+                      - link "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [ref=e143] [cursor=pointer]:
+                        - /url: /articles/najaf-and-the-architecture-of-memory
+                    - paragraph [ref=e144]: قراءة في العلاقة بين الصحافة الثقافية الجديدة ومفهوم الذاكرة المدينية، وكيف يمكن للهوية النجفية أن تُترجم إلى منصة نشر معاصرة.
+                  - generic [ref=e145]:
+                    - generic [ref=e146]:
+                      - generic [ref=e147]: سارة الموسوي
+                      - generic [ref=e148]:
+                        - img [ref=e149]
+                        - text: 1 د
+                    - link "قراءة" [ref=e152] [cursor=pointer]:
+                      - /url: /articles/najaf-and-the-architecture-of-memory
+                      - text: قراءة
+                      - img [ref=e153]
+              - generic [ref=e155]:
+                - 'link "قراءة مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e156] [cursor=pointer]':
+                  - /url: /articles/book-review-arabic-cultural-magazines
+                  - 'img "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e157]'
+                - generic [ref=e158]:
+                  - generic [ref=e159]:
+                    - generic [ref=e160]: أدب ونقد
+                    - time [ref=e161]: ١٥ نيسان ٢٠٢٦
+                  - generic [ref=e162]:
+                    - 'heading "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [level=3] [ref=e163]':
+                      - 'link "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e164] [cursor=pointer]':
+                        - /url: /articles/book-review-arabic-cultural-magazines
+                    - paragraph [ref=e165]: مراجعة كتاب تستعيد أثر المجلات الثقافية في تشكيل الذائقة واللغة النقدية.
+                  - generic [ref=e166]:
+                    - generic [ref=e167]:
+                      - generic [ref=e168]: سارة الموسوي
+                      - generic [ref=e169]:
+                        - img [ref=e170]
+                        - text: 6 د
+                    - link "قراءة" [ref=e173] [cursor=pointer]:
+                      - /url: /articles/book-review-arabic-cultural-magazines
+                      - text: قراءة
+                      - img [ref=e174]
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - heading "الأكثر قراءة" [level=3] [ref=e178]
+              - generic [ref=e179]: اتجاهات
+            - generic [ref=e180]:
+              - link "1 تاريخ وذاكرة النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة ١٬٤٣٠ قراءة" [ref=e181] [cursor=pointer]:
+                - /url: /articles/najaf-and-the-architecture-of-memory
+                - generic [ref=e182]: "1"
+                - generic [ref=e183]:
+                  - generic [ref=e184]: تاريخ وذاكرة
+                  - heading "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [level=4] [ref=e185]
+                  - paragraph [ref=e186]: ١٬٤٣٠ قراءة
+              - 'link "2 أدب ونقد مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟ ٩٨٠ قراءة" [ref=e187] [cursor=pointer]':
+                - /url: /articles/book-review-arabic-cultural-magazines
+                - generic [ref=e188]: "2"
+                - generic [ref=e189]:
+                  - generic [ref=e190]: أدب ونقد
+                  - 'heading "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [level=4] [ref=e191]'
+                  - paragraph [ref=e192]: ٩٨٠ قراءة
+              - link "3 تاريخ وذاكرة الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء ٠ قراءة" [ref=e193] [cursor=pointer]:
+                - /url: /articles/alshykh-akrm-alkaby
+                - generic [ref=e194]: "3"
+                - generic [ref=e195]:
+                  - generic [ref=e196]: تاريخ وذاكرة
+                  - heading "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [level=4] [ref=e197]
+                  - paragraph [ref=e198]: ٠ قراءة
+              - link "4 فكر ومعرفة تجربة الكتابة في منصة النجف ٠ قراءة" [ref=e199] [cursor=pointer]:
+                - /url: /articles/alal
+                - generic [ref=e200]: "4"
+                - generic [ref=e201]:
+                  - generic [ref=e202]: فكر ومعرفة
+                  - heading "تجربة الكتابة في منصة النجف" [level=4] [ref=e203]
+                  - paragraph [ref=e204]: ٠ قراءة
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - generic [ref=e207]: الأقسام
+            - generic [ref=e208]:
+              - heading "تصفّح حسب الموضوع" [level=2] [ref=e209]
+              - paragraph [ref=e210]: مسارات واضحة للوصول إلى المقالات حسب الاهتمام.
+          - generic [ref=e211]:
+            - link "فكر ومعرفة 1 مقال فكر ومعرفة قراءات فكرية وتحليلات فلسفية في الشأن الثقافي العربي." [ref=e212] [cursor=pointer]:
+              - /url: /categories/thought-and-knowledge
+              - generic [ref=e213]:
+                - img "فكر ومعرفة" [ref=e215]
+                - generic [ref=e217]:
+                  - generic [ref=e218]: 1 مقال
+                  - generic [ref=e219]:
+                    - heading "فكر ومعرفة" [level=3] [ref=e220]
+                    - paragraph [ref=e221]: قراءات فكرية وتحليلات فلسفية في الشأن الثقافي العربي.
+            - link "أدب ونقد 1 مقال أدب ونقد مقالات نقدية، مراجعات كتب، وملفات أدبية متخصصة." [ref=e222] [cursor=pointer]:
+              - /url: /categories/literature-and-criticism
+              - generic [ref=e223]:
+                - img "أدب ونقد" [ref=e225]
+                - generic [ref=e227]:
+                  - generic [ref=e228]: 1 مقال
+                  - generic [ref=e229]:
+                    - heading "أدب ونقد" [level=3] [ref=e230]
+                    - paragraph [ref=e231]: مقالات نقدية، مراجعات كتب، وملفات أدبية متخصصة.
+            - link "تاريخ وذاكرة 2 مقال تاريخ وذاكرة استعادة الذاكرة النجفية والعراقية من خلال الوثيقة والرواية." [ref=e232] [cursor=pointer]:
+              - /url: /categories/history-and-memory
+              - generic [ref=e233]:
+                - img "تاريخ وذاكرة" [ref=e235]
+                - generic [ref=e237]:
+                  - generic [ref=e238]: 2 مقال
+                  - generic [ref=e239]:
+                    - heading "تاريخ وذاكرة" [level=3] [ref=e240]
+                    - paragraph [ref=e241]: استعادة الذاكرة النجفية والعراقية من خلال الوثيقة والرواية.
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - generic [ref=e244]: الكتّاب
+            - generic [ref=e245]:
+              - heading "أصوات المنصة" [level=2] [ref=e246]
+              - paragraph [ref=e247]: كتّاب وباحثون يقدّمون معرفة عربية رصينة.
+          - generic [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - generic [ref=e252]: زا
+                - generic [ref=e253]:
+                  - heading "زهراء الجبوري" [level=3] [ref=e254]
+                  - paragraph [ref=e255]: التاريخ الثقافي
+              - paragraph [ref=e256]: باحثة في تاريخ المدن العربية وتهتم بالكتابة الثقافية ذات البعد الاجتماعي.
+              - generic [ref=e257]:
+                - generic [ref=e258]: ٠ مقال
+                - generic [ref=e259]: ٠ متابع
+              - link "صفحة الكاتب" [ref=e260] [cursor=pointer]:
+                - /url: /authors/زهراء الجبوري
+            - generic [ref=e261]:
+              - generic [ref=e262]:
+                - generic [ref=e264]: سا
+                - generic [ref=e265]:
+                  - heading "سارة الموسوي" [level=3] [ref=e266]
+                  - paragraph [ref=e267]: النقد الأدبي
+              - paragraph [ref=e268]: كاتبة عراقية تهتم بسرديات المدينة والذاكرة الثقافية ومراجعات الكتب.
+              - generic [ref=e269]:
+                - generic [ref=e270]: النقد الأدبي
+                - generic [ref=e271]: سرديات المدينة
+                - generic [ref=e272]: مراجعات الكتب
+              - generic [ref=e273]:
+                - generic [ref=e274]: ٢ مقال
+                - generic [ref=e275]: ٠ متابع
+              - link "صفحة الكاتب" [ref=e276] [cursor=pointer]:
+                - /url: /authors/sara-almousawi
+        - generic [ref=e278]:
+          - generic [ref=e279]:
+            - paragraph [ref=e280]: النشرة البريدية
+            - heading "مختارات ثقافية في بريدك" [level=3] [ref=e281]
+            - paragraph [ref=e282]: رسائل موجزة تضم أبرز المقالات والتنبيهات التحريرية.
+          - generic [ref=e283]:
+            - textbox "البريد الإلكتروني" [ref=e284]
+            - button "اشتراك" [ref=e285]
+    - contentinfo [ref=e286]:
+      - generic [ref=e287]:
+        - generic [ref=e288]:
+          - heading "العمق النجفي" [level=3] [ref=e289]
+          - paragraph [ref=e290]: منصة عربية للنشر الثقافي والتحرير المعرفي.
+          - paragraph [ref=e291]: معرفة واضحة، وتحرير رصين.
+        - generic [ref=e292]:
+          - generic [ref=e293]:
+            - heading "التنقل" [level=4] [ref=e294]
+            - generic [ref=e295]:
+              - link "الرئيسية" [ref=e296] [cursor=pointer]:
+                - /url: /
+              - link "الأقسام" [ref=e297] [cursor=pointer]:
+                - /url: /#categories
+              - link "البحث" [ref=e298] [cursor=pointer]:
+                - /url: /search
+              - link "الكتّاب" [ref=e299] [cursor=pointer]:
+                - /url: /authors/sara-almousawi
+              - link "التقديم ككاتب" [ref=e300] [cursor=pointer]:
+                - /url: /apply
+          - generic [ref=e301]:
+            - heading "عن المنصة" [level=4] [ref=e302]
+            - paragraph [ref=e303]: مساحة للنشر الثقافي العربي، تجمع المقالات والملفات والكتّاب ضمن تجربة قراءة واضحة.
+  - region "Notifications alt+T"

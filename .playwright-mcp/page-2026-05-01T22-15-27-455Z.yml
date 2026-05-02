@@ -1,0 +1,21 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e7]
+          - generic [ref=e12]:
+            - paragraph [ref=e13]: العمق النجفي
+            - paragraph [ref=e14]: المقالات
+        - button "فتح تنقل لوحة التحكم" [ref=e15]:
+          - img [ref=e16]
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "لوحة التحكم" [level=1] [ref=e20]
+        - paragraph [ref=e21]: مرحبًا هيئة التحرير. يمكنك إدارة المحتوى من هنا.
+      - button "تسجيل الخروج" [ref=e23]:
+        - img [ref=e24]
+        - text: تسجيل الخروج
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e38] [cursor=pointer]:
+    - img [ref=e39]

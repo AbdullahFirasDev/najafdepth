@@ -1,0 +1,194 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e69]:
+    - complementary [ref=e70]:
+      - generic [ref=e71]:
+        - img [ref=e73]
+        - generic [ref=e78]:
+          - paragraph [ref=e79]: العمق النجفي
+          - paragraph [ref=e80]: لوحة الإدارة
+      - navigation [ref=e81]:
+        - link "نظرة عامة" [ref=e82] [cursor=pointer]:
+          - /url: /dashboard
+        - link "المقالات" [ref=e83] [cursor=pointer]:
+          - /url: /dashboard/articles
+        - link "طلبات الكتّاب" [ref=e84] [cursor=pointer]:
+          - /url: /dashboard/writer-requests
+        - link "المستخدمون" [ref=e85] [cursor=pointer]:
+          - /url: /dashboard/users
+        - link "الأقسام" [ref=e86] [cursor=pointer]:
+          - /url: /dashboard/categories
+        - link "الوسوم" [ref=e87] [cursor=pointer]:
+          - /url: /dashboard/tags
+        - link "التعليقات" [ref=e88] [cursor=pointer]:
+          - /url: /dashboard/comments
+        - link "التحليلات" [ref=e89] [cursor=pointer]:
+          - /url: /dashboard/analytics
+        - link "الإعدادات" [ref=e90] [cursor=pointer]:
+          - /url: /dashboard/settings
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - heading "لوحة التحكم" [level=1] [ref=e94]
+          - paragraph [ref=e95]: مرحبًا هيئة التحرير، هذه مساحة التحرير والإدارة.
+        - button "تسجيل الخروج" [ref=e96]:
+          - img [ref=e97]
+          - text: تسجيل الخروج
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - paragraph [ref=e104]: المستخدمون
+              - generic [ref=e105]: +12%
+            - paragraph [ref=e106]: "4"
+            - paragraph [ref=e107]: إجمالي الحسابات النشطة داخل المنصة
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - paragraph [ref=e110]: الطلبات الجديدة
+              - generic [ref=e111]: +4 هذا الأسبوع
+            - paragraph [ref=e112]: "0"
+            - paragraph [ref=e113]: طلبات كتاب بانتظار المراجعة
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - paragraph [ref=e116]: المقالات
+              - generic [ref=e117]: +8%
+            - paragraph [ref=e118]: "4"
+            - paragraph [ref=e119]: مواد منشورة ومسودات داخل سير العمل
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - paragraph [ref=e122]: الإعجابات
+              - generic [ref=e123]: مباشر
+            - paragraph [ref=e124]: "212"
+            - paragraph [ref=e125]: إجمالي الإعجابات المسجلة على المقالات
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - paragraph [ref=e128]: التعليقات المعلقة
+              - generic [ref=e129]: "-3 اليوم"
+            - paragraph [ref=e130]: "0"
+            - paragraph [ref=e131]: تعليقات تنتظر المراجعة الإدارية
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - heading "تحليلات الأداء" [level=3] [ref=e135]
+              - paragraph [ref=e136]: قراءات يومية وتفاعل القراء خلال الأسبوع الجاري.
+            - application [ref=e140]:
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - generic [ref=e157]: السبت
+                  - generic [ref=e159]: الأحد
+                  - generic [ref=e161]: الاثنين
+                  - generic [ref=e163]: الثلاثاء
+                  - generic [ref=e165]: الأربعاء
+                  - generic [ref=e167]: الخميس
+                  - generic [ref=e169]: الجمعة
+                - generic [ref=e170]:
+                  - generic [ref=e172]: "0"
+                  - generic [ref=e174]: "300"
+                  - generic [ref=e176]: "600"
+                  - generic [ref=e178]: "900"
+                  - generic [ref=e180]: "1200"
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - heading "أفضل المواد أداءً" [level=2] [ref=e183]
+              - paragraph [ref=e184]: أكثر المقالات قراءة وتفاعلاً خلال الفترة الحالية.
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - img "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [ref=e188]
+                - generic [ref=e189]:
+                  - generic [ref=e190]:
+                    - generic [ref=e191]: تاريخ وذاكرة
+                    - generic [ref=e192]: ١٨ نيسان ٢٠٢٦
+                  - generic [ref=e193]:
+                    - heading "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [level=3] [ref=e194]:
+                      - link "النجف وعمارة الذاكرة الثقافية في الصحافة العربية الجديدة" [ref=e195] [cursor=pointer]:
+                        - /url: /articles/najaf-and-the-architecture-of-memory
+                    - paragraph [ref=e196]: قراءة في العلاقة بين الصحافة الثقافية الجديدة ومفهوم الذاكرة المدينية، وكيف يمكن للهوية النجفية أن تُترجم إلى منصة نشر معاصرة.
+                  - generic [ref=e197]:
+                    - generic [ref=e198]:
+                      - generic [ref=e199]: سارة الموسوي
+                      - generic [ref=e200]:
+                        - img [ref=e201]
+                        - text: 1 دقائق
+                      - generic [ref=e204]:
+                        - img [ref=e205]
+                        - text: ١٬٤٣٠
+                    - link "متابعة" [ref=e208] [cursor=pointer]:
+                      - /url: /articles/najaf-and-the-architecture-of-memory
+                      - text: متابعة
+                      - img [ref=e209]
+              - generic [ref=e211]:
+                - 'img "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e213]'
+                - generic [ref=e214]:
+                  - generic [ref=e215]:
+                    - generic [ref=e216]: أدب ونقد
+                    - generic [ref=e217]: ١٥ نيسان ٢٠٢٦
+                  - generic [ref=e218]:
+                    - 'heading "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [level=3] [ref=e219]':
+                      - 'link "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e220] [cursor=pointer]':
+                        - /url: /articles/book-review-arabic-cultural-magazines
+                    - paragraph [ref=e221]: مراجعة كتاب تستعيد أثر المجلات الثقافية في تشكيل الذائقة واللغة النقدية.
+                  - generic [ref=e222]:
+                    - generic [ref=e223]:
+                      - generic [ref=e224]: سارة الموسوي
+                      - generic [ref=e225]:
+                        - img [ref=e226]
+                        - text: 6 دقائق
+                      - generic [ref=e229]:
+                        - img [ref=e230]
+                        - text: ٩٨٠
+                    - link "متابعة" [ref=e233] [cursor=pointer]:
+                      - /url: /articles/book-review-arabic-cultural-magazines
+                      - text: متابعة
+                      - img [ref=e234]
+              - generic [ref=e236]:
+                - img "تجربة الكتابة في منصة النجف" [ref=e238]
+                - generic [ref=e239]:
+                  - generic [ref=e240]:
+                    - generic [ref=e241]: فكر ومعرفة
+                    - generic [ref=e242]: ٢٠ نيسان ٢٠٢٦
+                  - generic [ref=e243]:
+                    - heading "تجربة الكتابة في منصة النجف" [level=3] [ref=e244]:
+                      - link "تجربة الكتابة في منصة النجف" [ref=e245] [cursor=pointer]:
+                        - /url: /articles/alal
+                    - paragraph [ref=e246]: ملخص تجريبي للكتابة في هذه المنصة الرائعة
+                  - generic [ref=e247]:
+                    - generic [ref=e248]:
+                      - generic [ref=e249]: هيئة التحرير
+                      - generic [ref=e250]:
+                        - img [ref=e251]
+                        - text: 1 دقائق
+                      - generic [ref=e254]:
+                        - img [ref=e255]
+                        - text: ٠
+                    - link "متابعة" [ref=e258] [cursor=pointer]:
+                      - /url: /articles/alal
+                      - text: متابعة
+                      - img [ref=e259]
+              - generic [ref=e261]:
+                - img "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [ref=e263]
+                - generic [ref=e264]:
+                  - generic [ref=e265]:
+                    - generic [ref=e266]: تاريخ وذاكرة
+                    - generic [ref=e267]: ٢٩ نيسان ٢٠٢٦
+                  - generic [ref=e268]:
+                    - heading "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [level=3] [ref=e269]:
+                      - link "الشيخ اكرم الكعبي - المقاومة الاسلامية حركة النجباء" [ref=e270] [cursor=pointer]:
+                        - /url: /articles/alshykh-akrm-alkaby
+                    - paragraph [ref=e271]: أكرم عباس الكعبي (وُلد في 17 يونيو 1977) هو الأمين العام لحركة النجباء، احد فصائل المقاومة الإسلامية في العراق ، وهو احد المطلوبين من قبل سلطة مكافحة الإرهاب بعد ادراج وزارة الخارجية الأمريكية إسمه على قائمة الإرهابيين الدوليين بموجب الأمر التنفيذي رقم 13224 الصادر عن سلطة مكافحة الإرهاب ، لتورطه في تنفيذ هجمات ضد قوات التحالف ومواطنين عراقيين أبرياء.
+                  - generic [ref=e272]:
+                    - generic [ref=e273]:
+                      - generic [ref=e274]: هيئة التحرير
+                      - generic [ref=e275]:
+                        - img [ref=e276]
+                        - text: 1 دقائق
+                      - generic [ref=e279]:
+                        - img [ref=e280]
+                        - text: ٠
+                    - link "متابعة" [ref=e283] [cursor=pointer]:
+                      - /url: /articles/alshykh-akrm-alkaby
+                      - text: متابعة
+                      - img [ref=e284]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e58] [cursor=pointer]:
+    - img [ref=e59]
+  - alert [ref=e62]: العمق النجفي
+  - generic [ref=e286]: "0"

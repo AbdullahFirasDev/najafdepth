@@ -1,0 +1,2526 @@
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[browser] An optimistic state update occurred outside a transition or action. To fix, move the update to an action, or wrap with startTransition. 
+    at runLike (src/components/articles/article-actions.tsx:42:5)
+  40 |
+  41 |   const runLike = () => {
+> 42 |     updateOptimisticCounts({ type: "like", delta: 1 });
+     |     ^
+  43 |     startTransition(async () => {
+  44 |       const loadingToast = toast.loading("جارٍ الحفظ...");
+  45 |       const result = await toggleArticleLike(slug); (src/components/articles/article-actions.tsx:42:5)
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] An optimistic state update occurred outside a transition or action. To fix, move the update to an action, or wrap with startTransition. 
+    at runLike (src/components/articles/article-actions.tsx:42:5)
+  40 |
+  41 |   const runLike = () => {
+> 42 |     updateOptimisticCounts({ type: "like", delta: 1 });
+     |     ^
+  43 |     startTransition(async () => {
+  44 |       const loadingToast = toast.loading("جارٍ الحفظ...");
+  45 |       const result = await toggleArticleLike(slug); (src/components/articles/article-actions.tsx:42:5)
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+⨯ ./src/app/(dashboard)/dashboard/categories/page.tsx:3:1
+Module not found: Can't resolve '@/components/forms/category-form'
+  [90m1 |[0m [36mimport[0m { notFound } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mCategoryForm[0m } [36mfrom[0m [32m"@/components/forms/category-form"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mBadge[0m } [36mfrom[0m [32m"@/components/ui/badge"[0m;
+  [90m5 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m6 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/forms/category-form' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(dashboard)/dashboard/categories/page.tsx:3:1
+Module not found: Can't resolve '@/components/forms/category-form'
+  [90m1 |[0m [36mimport[0m { notFound } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mCategoryForm[0m } [36mfrom[0m [32m"@/components/forms/category-form"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mBadge[0m } [36mfrom[0m [32m"@/components/ui/badge"[0m;
+  [90m5 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m6 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/forms/category-form' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(dashboard)/dashboard/categories/page.tsx:3:1
+Module not found: Can't resolve '@/components/forms/category-form'
+  [90m1 |[0m [36mimport[0m { notFound } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mCategoryForm[0m } [36mfrom[0m [32m"@/components/forms/category-form"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mBadge[0m } [36mfrom[0m [32m"@/components/ui/badge"[0m;
+  [90m5 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m6 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/forms/category-form' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(dashboard)/dashboard/categories/page.tsx:3:1
+Module not found: Can't resolve '@/components/forms/category-form'
+  [90m1 |[0m [36mimport[0m { notFound } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mCategoryForm[0m } [36mfrom[0m [32m"@/components/forms/category-form"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mBadge[0m } [36mfrom[0m [32m"@/components/ui/badge"[0m;
+  [90m5 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m6 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/forms/category-form' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./src/app/(dashboard)/dashboard/categories/page.tsx:3:1
+Module not found: Can't resolve '@/components/forms/category-form'
+  1 | import { notFound } from "next/navigation";
+  2 |
+> 3 | import { CategoryForm } from "@/components/forms/category-form";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Badge } from "@/components/ui/badge";
+  5 | import { Card } from "@/components/ui/card";
+  6 | import { auth } from "@/lib/auth";
+
+Import map: aliased to relative './src/components/forms/category-form' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/(dashboard)/dashboard/categories/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/app/(dashboard)/dashboard/categories/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] Uncaught Error: ./src/app/(dashboard)/dashboard/categories/page.tsx:3:1
+Module not found: Can't resolve '@/components/forms/category-form'
+  1 | import { notFound } from "next/navigation";
+  2 |
+> 3 | import { CategoryForm } from "@/components/forms/category-form";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Badge } from "@/components/ui/badge";
+  5 | import { Card } from "@/components/ui/card";
+  6 | import { auth } from "@/lib/auth";
+
+Import map: aliased to relative './src/components/forms/category-form' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/(dashboard)/dashboard/categories/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/app/(dashboard)/dashboard/categories/page.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/router/router.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] Image with src "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1400&q=80" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[browser] An optimistic state update occurred outside a transition or action. To fix, move the update to an action, or wrap with startTransition. 
+    at runLike (src/components/articles/article-actions.tsx:42:5)
+  40 |
+  41 |   const runLike = () => {
+> 42 |     updateOptimisticCounts({ type: "like", delta: 1 });
+     |     ^
+  43 |     startTransition(async () => {
+  44 |       const loadingToast = toast.loading("جارٍ الحفظ...");
+  45 |       const result = await toggleArticleLike(slug); (src/components/articles/article-actions.tsx:42:5)
+[browser] An optimistic state update occurred outside a transition or action. To fix, move the update to an action, or wrap with startTransition. 
+    at runLike (src/components/articles/article-actions.tsx:42:5)
+  40 |
+  41 |   const runLike = () => {
+> 42 |     updateOptimisticCounts({ type: "like", delta: 1 });
+     |     ^
+  43 |     startTransition(async () => {
+  44 |       const loadingToast = toast.loading("جارٍ الحفظ...");
+  45 |       const result = await toggleArticleLike(slug); (src/components/articles/article-actions.tsx:42:5)
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+⨯ ./src/app/(dashboard)/dashboard/tags/page.tsx:3:1
+Module not found: Can't resolve '@/components/forms/tag-form'
+  [90m1 |[0m [36mimport[0m { notFound } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mTagForm[0m } [36mfrom[0m [32m"@/components/forms/tag-form"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mBadge[0m } [36mfrom[0m [32m"@/components/ui/badge"[0m;
+  [90m5 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m6 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/forms/tag-form' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(dashboard)/dashboard/tags/page.tsx:3:1
+Module not found: Can't resolve '@/components/forms/tag-form'
+  [90m1 |[0m [36mimport[0m { notFound } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mTagForm[0m } [36mfrom[0m [32m"@/components/forms/tag-form"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mBadge[0m } [36mfrom[0m [32m"@/components/ui/badge"[0m;
+  [90m5 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m6 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/forms/tag-form' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error pool timeout: failed to retrieve a connection from pool after 21541ms
+    (pool connections: active=5 idle=0 limit=5) {
+  message: 'pool timeout: failed to retrieve a connection from pool after 21541ms\n' +
+    '    (pool connections: active=5 idle=0 limit=5)',
+  stack: 'DriverAdapterError: pool timeout: failed to retrieve a connection from pool after 21541ms\n' +
+    '    (pool connections: active=5 idle=0 limit=5)\n' +
+    '    at PrismaMariaDbAdapter.onError (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8897:15)\n' +
+    '    at PrismaMariaDbAdapter.performIO (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8892:18)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async PrismaMariaDbAdapter.queryRaw (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8857:24)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:44614)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:45058)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43737)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:46278)\n' +
+    '    at async e.run (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43328)\n' +
+    '    at async e.execute (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:57:815)\n' +
+    '    at async jt.request (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:58:2399)\n' +
+    '    at async Object.singleLoader (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:65:6569)',
+  name: 'DriverAdapterError'
+}
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error pool timeout: failed to retrieve a connection from pool after 18616ms
+    (pool connections: active=1 idle=0 limit=5) {
+  message: 'pool timeout: failed to retrieve a connection from pool after 18616ms\n' +
+    '    (pool connections: active=1 idle=0 limit=5)',
+  stack: 'DriverAdapterError: pool timeout: failed to retrieve a connection from pool after 18616ms\n' +
+    '    (pool connections: active=1 idle=0 limit=5)\n' +
+    '    at PrismaMariaDbAdapter.onError (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8897:15)\n' +
+    '    at PrismaMariaDbAdapter.performIO (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8892:18)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at runNextTicks (node:internal/process/task_queues:68:3)\n' +
+    '    at process.processTimers (node:internal/timers:538:9)\n' +
+    '    at async PrismaMariaDbAdapter.queryRaw (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8857:24)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:44614)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:45058)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43737)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:46278)\n' +
+    '    at async e.run (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43328)\n' +
+    '    at async e.execute (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:57:815)\n' +
+    '    at async jt.request (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:58:2399)\n' +
+    '    at async Object.singleLoader (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:65:6569)',
+  name: 'DriverAdapterError'
+}
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error pool timeout: failed to retrieve a connection from pool after 18615ms
+    (pool connections: active=1 idle=0 limit=5) {
+  message: 'pool timeout: failed to retrieve a connection from pool after 18615ms\n' +
+    '    (pool connections: active=1 idle=0 limit=5)',
+  stack: 'DriverAdapterError: pool timeout: failed to retrieve a connection from pool after 18615ms\n' +
+    '    (pool connections: active=1 idle=0 limit=5)\n' +
+    '    at PrismaMariaDbAdapter.onError (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8897:15)\n' +
+    '    at PrismaMariaDbAdapter.performIO (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8892:18)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at runNextTicks (node:internal/process/task_queues:68:3)\n' +
+    '    at process.processTimers (node:internal/timers:538:9)\n' +
+    '    at async PrismaMariaDbAdapter.queryRaw (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8857:24)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:44614)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:45058)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43737)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:46278)\n' +
+    '    at async e.run (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43328)\n' +
+    '    at async e.execute (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:57:815)\n' +
+    '    at async jt.request (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:58:2399)\n' +
+    '    at async Object.singleLoader (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:65:6569)',
+  name: 'DriverAdapterError'
+}
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error pool timeout: failed to retrieve a connection from pool after 18614ms
+    (pool connections: active=1 idle=0 limit=5) {
+  message: 'pool timeout: failed to retrieve a connection from pool after 18614ms\n' +
+    '    (pool connections: active=1 idle=0 limit=5)',
+  stack: 'DriverAdapterError: pool timeout: failed to retrieve a connection from pool after 18614ms\n' +
+    '    (pool connections: active=1 idle=0 limit=5)\n' +
+    '    at PrismaMariaDbAdapter.onError (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8897:15)\n' +
+    '    at PrismaMariaDbAdapter.performIO (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8892:18)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at runNextTicks (node:internal/process/task_queues:68:3)\n' +
+    '    at process.processTimers (node:internal/timers:538:9)\n' +
+    '    at async PrismaMariaDbAdapter.queryRaw (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0xcq2y6._.js:8857:24)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:44614)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:45058)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43737)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:46278)\n' +
+    '    at async e.run (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43328)\n' +
+    '    at async e.execute (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:57:815)\n' +
+    '    at async jt.request (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:58:2399)\n' +
+    '    at async Object.singleLoader (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:65:6569)',
+  name: 'DriverAdapterError'
+}
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+[browser] Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. TypeError: network error
+TypeError: network error
+[browser] Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. TypeError: network error
+TypeError: network error
+[browser] Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. TypeError: network error
+TypeError: network error
+[browser] Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. TypeError: network error
+TypeError: network error
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\bfras\AppData\Local\Temp\next-panic-963e48fe18a86f0fae45899a9bd11619.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2F%28site%29%2Fpage&body=Turbopack%20version%3A%20%602275bd85%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2F%28site%29%2Fpage%0A%0ACaused%20by%3A%0A-%20Cell%20CellId%20%7B%20type_id%3A%20ValueTypeId%20%7B%20id%3A%2081%2C%20name%3A%20ValueType%20%7B%20name%3A%20%22next_core%3A%3Aapp_structure%3A%3AAppPageLoaderTree%22%20%7D%20%7D%2C%20index%3A%200%20%7D%20no%20longer%20exists%20in%20task%20TaskId%20%7B%20id%3A%20296%20%7D%20directory_tree_to_loader_tree%20%28no%20cell%20of%20this%20type%20exists%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20hmr_update_with_issues_operation%20failed%0A-%20Execution%20of%20Project%3A%3Ahmr_update%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2F%28site%29%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20get_app_page_entry%20failed%0A-%20Cell%20CellId%20%7B%20type_id%3A%20ValueTypeId%20%7B%20id%3A%2081%2C%20name%3A%20ValueType%20%7B%20name%3A%20%22next_core%3A%3Aapp_structure%3A%3AAppPageLoaderTree%22%20%7D%20%7D%2C%20index%3A%200%20%7D%20no%20longer%20exists%20in%20task%20TaskId%20%7B%20id%3A%20296%20%7D%20directory_tree_to_loader_tree%20%28no%20cell%20of%20this%20type%20exists%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+[Server HMR] Subscription error: Error [TurbopackInternalError]: Failed to write app endpoint /(site)/page
+
+Caused by:
+- Cell CellId { type_id: ValueTypeId { id: 81, name: ValueType { name: "next_core::app_structure::AppPageLoaderTree" } }, index: 0 } no longer exists in task TaskId { id: 296 } directory_tree_to_loader_tree (no cell of this type exists)
+
+Debug info:
+- Execution of hmr_update_with_issues_operation failed
+- Execution of Project::hmr_update failed
+- Execution of VersionedContentMap::get failed
+- Execution of VersionedContentMap::get_asset failed
+- Execution of VersionedContentMap::compute_entry failed
+- Execution of *emit_assets failed
+- Execution of all_assets_from_entries_operation failed
+- Execution of *all_assets_from_entries failed
+- Execution of endpoint_output_assets_operation failed
+- Execution of <AppEndpoint as Endpoint>::output failed
+- Failed to write app endpoint /(site)/page
+- Execution of *all_asset_paths failed
+- Execution of *AppEndpointOutput::output_assets failed
+- Execution of AppEndpoint::output failed
+- Execution of get_app_page_entry failed
+- Cell CellId { type_id: ValueTypeId { id: 81, name: ValueType { name: "next_core::app_structure::AppPageLoaderTree" } }, index: 0 } no longer exists in task TaskId { id: 296 } directory_tree_to_loader_tree (no cell of this type exists)
+    at <unknown> (TurbopackInternalError: Failed to write app endpoint /(site)/page) {
+  location: undefined
+}
+[Server HMR] Subscription error: Error [TurbopackInternalError]: Failed to write app endpoint /(site)/page
+
+Caused by:
+- Cell CellId { type_id: ValueTypeId { id: 81, name: ValueType { name: "next_core::app_structure::AppPageLoaderTree" } }, index: 0 } no longer exists in task TaskId { id: 296 } directory_tree_to_loader_tree (no cell of this type exists)
+
+Debug info:
+- Execution of hmr_update_with_issues_operation failed
+- Execution of Project::hmr_update failed
+- Execution of VersionedContentMap::get failed
+- Execution of VersionedContentMap::get_asset failed
+- Execution of VersionedContentMap::compute_entry failed
+- Execution of *emit_assets failed
+- Execution of all_assets_from_entries_operation failed
+- Execution of *all_assets_from_entries failed
+- Execution of endpoint_output_assets_operation failed
+- Execution of <AppEndpoint as Endpoint>::output failed
+- Failed to write app endpoint /(site)/page
+- Execution of *all_asset_paths failed
+- Execution of *AppEndpointOutput::output_assets failed
+- Execution of AppEndpoint::output failed
+- Execution of get_app_page_entry failed
+- Cell CellId { type_id: ValueTypeId { id: 81, name: ValueType { name: "next_core::app_structure::AppPageLoaderTree" } }, index: 0 } no longer exists in task TaskId { id: 296 } directory_tree_to_loader_tree (no cell of this type exists)
+    at <unknown> (TurbopackInternalError: Failed to write app endpoint /(site)/page) {
+  location: undefined
+}
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[next-auth][error][JWT_SESSION_ERROR] 
+https://next-auth.js.org/errors#jwt_session_error pool timeout: failed to retrieve a connection from pool after 10739ms
+    (pool connections: active=3 idle=0 limit=5) {
+  message: 'pool timeout: failed to retrieve a connection from pool after 10739ms\n' +
+    '    (pool connections: active=3 idle=0 limit=5)',
+  stack: 'DriverAdapterError: pool timeout: failed to retrieve a connection from pool after 10739ms\n' +
+    '    (pool connections: active=3 idle=0 limit=5)\n' +
+    '    at PrismaMariaDbAdapter.onError (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0o-7yry._.js:9379:15)\n' +
+    '    at PrismaMariaDbAdapter.performIO (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0o-7yry._.js:9374:18)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n' +
+    '    at async PrismaMariaDbAdapter.queryRaw (C:\\xampp\\htdocs\\Alkindi\\.next\\dev\\server\\chunks\\ssr\\[root-of-the-server]__0o-7yry._.js:9339:24)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:44614)\n' +
+    '    at async C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:45769\n' +
+    '    at async Promise.all (index 0)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:45695)\n' +
+    '    at async e.interpretNode (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:46278)\n' +
+    '    at async e.run (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:11:43328)\n' +
+    '    at async e.execute (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:57:815)\n' +
+    '    at async jt.request (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:58:2399)\n' +
+    '    at async Object.singleLoader (C:\\xampp\\htdocs\\Alkindi\\node_modules\\@prisma\\client\\runtime\\client.js:65:6569)',
+  name: 'DriverAdapterError'
+}
+⨯ ./src/app/(site)/categories/[slug]/page.tsx:3:1
+Module not found: Can't resolve '@/components/home/article-card'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/home/section-heading"[0m;
+  [90m5 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m6 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/categories/[slug]/page.tsx:3:1
+Module not found: Can't resolve '@/components/home/article-card'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSectionHeading[0m } [36mfrom[0m [32m"@/components/home/section-heading"[0m;
+  [90m5 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m6 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(dashboard)/dashboard/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { [33mAnalyticsChart[0m } [36mfrom[0m [32m"@/components/dashboard/analytics-chart"[0m;
+  [90m3 |[0m [36mimport[0m { [33mStatCard[0m } [36mfrom[0m [32m"@/components/dashboard/stat-card"[0m;
+  [90m4 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(dashboard)/dashboard/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { [33mAnalyticsChart[0m } [36mfrom[0m [32m"@/components/dashboard/analytics-chart"[0m;
+  [90m3 |[0m [36mimport[0m { [33mStatCard[0m } [36mfrom[0m [32m"@/components/dashboard/stat-card"[0m;
+  [90m4 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/search/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { [33mSearchDiscovery[0m } [36mfrom[0m [32m"@/components/search/search-discovery"[0m;
+  [90m3 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m4 |[0m [36mimport[0m { getHomepageData, getSearchPageData } [36mfrom[0m [32m"@/lib/data"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/search/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { [33mSearchDiscovery[0m } [36mfrom[0m [32m"@/components/search/search-discovery"[0m;
+  [90m3 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m4 |[0m [36mimport[0m { getHomepageData, getSearchPageData } [36mfrom[0m [32m"@/lib/data"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/search/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { [33mSearchDiscovery[0m } [36mfrom[0m [32m"@/components/search/search-discovery"[0m;
+  [90m3 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m4 |[0m [36mimport[0m { getHomepageData, getSearchPageData } [36mfrom[0m [32m"@/lib/data"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/search/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { [33mSearchDiscovery[0m } [36mfrom[0m [32m"@/components/search/search-discovery"[0m;
+  [90m3 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m4 |[0m [36mimport[0m { getHomepageData, getSearchPageData } [36mfrom[0m [32m"@/lib/data"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/search/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { [33mSearchDiscovery[0m } [36mfrom[0m [32m"@/components/search/search-discovery"[0m;
+  [90m3 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m4 |[0m [36mimport[0m { getHomepageData, getSearchPageData } [36mfrom[0m [32m"@/lib/data"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/search/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mArticleCard[0m } [36mfrom[0m [32m"@/components/home/article-card"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m [36mimport[0m { [33mSearchDiscovery[0m } [36mfrom[0m [32m"@/components/search/search-discovery"[0m;
+  [90m3 |[0m [36mimport[0m { [33mCard[0m } [36mfrom[0m [32m"@/components/ui/card"[0m;
+  [90m4 |[0m [36mimport[0m { getHomepageData, getSearchPageData } [36mfrom[0m [32m"@/lib/data"[0m;
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./src/app/(dashboard)/dashboard/page.tsx:1:1
+Module not found: Can't resolve '@/components/home/article-card'
+> 1 | import { ArticleCard } from "@/components/home/article-card";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import { AnalyticsChart } from "@/components/dashboard/analytics-chart";
+  3 | import { StatCard } from "@/components/dashboard/stat-card";
+  4 | import { Card } from "@/components/ui/card";
+
+Import map: aliased to relative './src/components/home/article-card' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/(dashboard)/dashboard/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/app/(dashboard)/dashboard/page.tsx:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import traces:
+  #1 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/(site)/search/page.tsx
+
+  #2 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import traces:
+  #1 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/(site)/search/page.tsx
+
+  #2 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import traces:
+  #1 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/(site)/categories/[slug]/page.tsx
+
+  #2 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import traces:
+  #1 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/(site)/categories/[slug]/page.tsx
+
+  #2 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/dashboard-sidebar.tsx:7:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 5 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { dashboardNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m 9 |[0m [36mimport[0m [36mtype[0m { [33mRoleKey[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m10 |[0m
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/dashboard-sidebar.tsx
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/dashboard-sidebar.tsx:7:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 5 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { dashboardNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m 9 |[0m [36mimport[0m [36mtype[0m { [33mRoleKey[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m10 |[0m
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/dashboard-sidebar.tsx
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/dashboard-sidebar.tsx:7:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 5 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { dashboardNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m 9 |[0m [36mimport[0m [36mtype[0m { [33mRoleKey[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m10 |[0m
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/dashboard-sidebar.tsx
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/dashboard-sidebar.tsx:7:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 5 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { dashboardNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m 9 |[0m [36mimport[0m [36mtype[0m { [33mRoleKey[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m10 |[0m
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/dashboard-sidebar.tsx
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/dashboard-sidebar.tsx:7:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 5 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { dashboardNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m 9 |[0m [36mimport[0m [36mtype[0m { [33mRoleKey[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m10 |[0m
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/dashboard-sidebar.tsx
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/dashboard-sidebar.tsx:7:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 5 |[0m [36mimport[0m { usePathname } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m 6 |[0m
+[31m[1m>[0m [90m 7 |[0m [36mimport[0m { dashboardNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 8 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m 9 |[0m [36mimport[0m [36mtype[0m { [33mRoleKey[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m10 |[0m
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/dashboard-sidebar.tsx
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import traces:
+  #1 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/(site)/sign-in/page.tsx
+
+  #2 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import traces:
+  #1 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/(site)/sign-in/page.tsx
+
+  #2 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/mobile-site-nav.tsx:9:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 7 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m 8 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+[31m[1m>[0m [90m 9 |[0m [36mimport[0m { mainNavigation } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m
+  [90m11 |[0m [36minterface[0m [33mMobileSiteNavProps[0m {
+  [90m12 |[0m   isAuthenticated: boolean;
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/mobile-site-nav.tsx
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-footer.tsx:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m"next/link"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m
+  [90m5 |[0m [36mexport[0m [36mfunction[0m [33mSiteFooter[0m() {
+  [90m6 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-footer.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:8:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m 6 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m 7 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { mainNavigation, siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { cn } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m
+  [90m11 |[0m [36mexport[0m [36masync[0m [36mfunction[0m [33mSiteHeader[0m() {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import traces:
+  #1 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/(site)/articles/[slug]/page.tsx
+
+  #2 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/seo.ts:3:1
+Module not found: Can't resolve '@/lib/constants'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mMetadata[0m } [36mfrom[0m [32m"next"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { siteConfig } [36mfrom[0m [32m"@/lib/constants"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { absoluteUrl, truncate } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mMetadataInput[0m {
+
+Import map: aliased to relative './src/lib/constants' inside of [project]/
+
+
+Import traces:
+  #1 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/(site)/articles/[slug]/page.tsx
+
+  #2 [Server Component]:
+    ./src/lib/seo.ts
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/site-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/layout/site-header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/site-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/layout/site-header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/site-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/layout/site-header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/site-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/layout/site-header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/site-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/layout/site-header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/site-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/layout/site-header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/site-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/layout/site-header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/site-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/layout/site-header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:5:1
+Module not found: Can't resolve '@/components/layout/mobile-site-nav'
+  [90m3 |[0m
+  [90m4 |[0m [36mimport[0m { [33mDesktopSiteNav[0m } [36mfrom[0m [32m"@/components/layout/desktop-site-nav"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMobileSiteNav[0m } [36mfrom[0m [32m"@/components/layout/mobile-site-nav"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m7 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m8 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/layout/mobile-site-nav' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:5:1
+Module not found: Can't resolve '@/components/layout/mobile-site-nav'
+  [90m3 |[0m
+  [90m4 |[0m [36mimport[0m { [33mDesktopSiteNav[0m } [36mfrom[0m [32m"@/components/layout/desktop-site-nav"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMobileSiteNav[0m } [36mfrom[0m [32m"@/components/layout/mobile-site-nav"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m7 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m8 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/layout/mobile-site-nav' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:5:1
+Module not found: Can't resolve '@/components/layout/mobile-site-nav'
+  [90m3 |[0m
+  [90m4 |[0m [36mimport[0m { [33mDesktopSiteNav[0m } [36mfrom[0m [32m"@/components/layout/desktop-site-nav"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMobileSiteNav[0m } [36mfrom[0m [32m"@/components/layout/mobile-site-nav"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m7 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m8 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/layout/mobile-site-nav' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:5:1
+Module not found: Can't resolve '@/components/layout/mobile-site-nav'
+  [90m3 |[0m
+  [90m4 |[0m [36mimport[0m { [33mDesktopSiteNav[0m } [36mfrom[0m [32m"@/components/layout/desktop-site-nav"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMobileSiteNav[0m } [36mfrom[0m [32m"@/components/layout/mobile-site-nav"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m7 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m8 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/layout/mobile-site-nav' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:5:1
+Module not found: Can't resolve '@/components/layout/mobile-site-nav'
+  [90m3 |[0m
+  [90m4 |[0m [36mimport[0m { [33mDesktopSiteNav[0m } [36mfrom[0m [32m"@/components/layout/desktop-site-nav"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMobileSiteNav[0m } [36mfrom[0m [32m"@/components/layout/mobile-site-nav"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m7 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m8 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/layout/mobile-site-nav' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:5:1
+Module not found: Can't resolve '@/components/layout/mobile-site-nav'
+  [90m3 |[0m
+  [90m4 |[0m [36mimport[0m { [33mDesktopSiteNav[0m } [36mfrom[0m [32m"@/components/layout/desktop-site-nav"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMobileSiteNav[0m } [36mfrom[0m [32m"@/components/layout/mobile-site-nav"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m7 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m8 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/layout/mobile-site-nav' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:5:1
+Module not found: Can't resolve '@/components/layout/mobile-site-nav'
+  [90m3 |[0m
+  [90m4 |[0m [36mimport[0m { [33mDesktopSiteNav[0m } [36mfrom[0m [32m"@/components/layout/desktop-site-nav"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMobileSiteNav[0m } [36mfrom[0m [32m"@/components/layout/mobile-site-nav"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m7 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m8 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/layout/mobile-site-nav' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/layout/site-header.tsx:5:1
+Module not found: Can't resolve '@/components/layout/mobile-site-nav'
+  [90m3 |[0m
+  [90m4 |[0m [36mimport[0m { [33mDesktopSiteNav[0m } [36mfrom[0m [32m"@/components/layout/desktop-site-nav"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMobileSiteNav[0m } [36mfrom[0m [32m"@/components/layout/mobile-site-nav"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m [36mimport[0m { [33mModeToggle[0m } [36mfrom[0m [32m"@/components/layout/mode-toggle"[0m;
+  [90m7 |[0m [36mimport[0m { [33mButton[0m } [36mfrom[0m [32m"@/components/ui/button"[0m;
+  [90m8 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+
+Import map: aliased to relative './src/components/layout/mobile-site-nav' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(dashboard)/dashboard/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/dashboard-sidebar'
+  [90m2 |[0m [36mimport[0m { redirect } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m3 |[0m
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mDashboardSidebar[0m } [36mfrom[0m [32m"@/components/layout/dashboard-sidebar"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mSignOutButton[0m } [36mfrom[0m [32m"@/components/layout/sign-out-button"[0m;
+  [90m6 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+  [90m7 |[0m [36mimport[0m { canAccessDashboard } [36mfrom[0m [32m"@/lib/permissions"[0m;
+
+Import map: aliased to relative './src/components/layout/dashboard-sidebar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(dashboard)/dashboard/layout.tsx:4:1
+Module not found: Can't resolve '@/components/layout/dashboard-sidebar'
+  [90m2 |[0m [36mimport[0m { redirect } [36mfrom[0m [32m"next/navigation"[0m;
+  [90m3 |[0m
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mDashboardSidebar[0m } [36mfrom[0m [32m"@/components/layout/dashboard-sidebar"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mSignOutButton[0m } [36mfrom[0m [32m"@/components/layout/sign-out-button"[0m;
+  [90m6 |[0m [36mimport[0m { auth } [36mfrom[0m [32m"@/lib/auth"[0m;
+  [90m7 |[0m [36mimport[0m { canAccessDashboard } [36mfrom[0m [32m"@/lib/permissions"[0m;
+
+Import map: aliased to relative './src/components/layout/dashboard-sidebar' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/(site)/layout.tsx:3:1
+Module not found: Can't resolve '@/components/layout/site-footer'
+  [90m1 |[0m [36mimport[0m [36mtype[0m { [33mReactNode[0m } [36mfrom[0m [32m"react"[0m;
+  [90m2 |[0m
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mSiteFooter[0m } [36mfrom[0m [32m"@/components/layout/site-footer"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mSiteHeader[0m } [36mfrom[0m [32m"@/components/layout/site-header"[0m;
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mSiteLayout[0m({ children }: { children: [33mReactNode[0m }) {
+
+Import map: aliased to relative './src/components/layout/site-footer' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+memory allocation of 16777216 bytes failed
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

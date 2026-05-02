@@ -1,0 +1,68 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e77]:
+    - banner [ref=e78]:
+      - generic [ref=e79]:
+        - link "ع العمق النجفي منصة ثقافية عربية" [ref=e80] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e81]: ع
+          - generic [ref=e82]:
+            - paragraph [ref=e83]: العمق النجفي
+            - paragraph [ref=e84]: منصة ثقافية عربية
+        - navigation [ref=e85]:
+          - link "الرئيسية" [ref=e86] [cursor=pointer]:
+            - /url: /
+          - link "الأقسام" [ref=e87] [cursor=pointer]:
+            - /url: /search?category=thought-and-knowledge
+          - link "الكتّاب" [ref=e88] [cursor=pointer]:
+            - /url: /authors/sara-almousawi
+          - link "تقديم طلب كتابة" [ref=e89] [cursor=pointer]:
+            - /url: /apply
+        - generic [ref=e90]:
+          - button "تبديل النمط" [ref=e91]:
+            - img [ref=e92]
+          - link "لوحة التحكم" [ref=e94] [cursor=pointer]:
+            - /url: /dashboard
+          - link "ابدأ الكتابة" [ref=e95] [cursor=pointer]:
+            - /url: /dashboard/articles/new
+            - img [ref=e96]
+            - text: ابدأ الكتابة
+    - main [ref=e99]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - heading "دخول هيئة التحرير والكتّاب" [level=1] [ref=e103]
+          - paragraph [ref=e104]: الوصول إلى لوحة النشر، سير المراجعة، والتحليلات التحريرية.
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - text: البريد الإلكتروني
+            - textbox "البريد الإلكتروني" [ref=e107]
+            - paragraph
+          - generic [ref=e108]:
+            - text: كلمة المرور
+            - textbox "كلمة المرور" [ref=e109]
+            - paragraph
+          - button "تسجيل الدخول" [ref=e110]
+    - contentinfo [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - heading "العمق النجفي" [level=3] [ref=e114]
+          - paragraph [ref=e115]: منصة ثقافية عربية فاخرة تستلهم عمق النجف وتقدم الصحافة الفكرية والأدبية الحديثة.
+          - paragraph [ref=e116]: معرفة تنبع من الذاكرة، وتكتب للمستقبل.
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - heading "التنقل" [level=4] [ref=e119]
+            - generic [ref=e120]:
+              - link "الرئيسية" [ref=e121] [cursor=pointer]:
+                - /url: /
+              - link "الأقسام" [ref=e122] [cursor=pointer]:
+                - /url: /search?category=thought-and-knowledge
+              - link "الكتّاب" [ref=e123] [cursor=pointer]:
+                - /url: /authors/sara-almousawi
+              - link "تقديم طلب كتابة" [ref=e124] [cursor=pointer]:
+                - /url: /apply
+          - generic [ref=e125]:
+            - heading "عن المنصة" [level=4] [ref=e126]
+            - paragraph [ref=e127]: تجربة عربية تجمع بين فخامة المجلة الثقافية ودقة منصات النشر الحديثة مع اهتمام خاص بالهوية النجفية.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e58] [cursor=pointer]:
+    - img [ref=e59]
+  - alert [ref=e62]: تسجيل الدخول | العمق النجفي

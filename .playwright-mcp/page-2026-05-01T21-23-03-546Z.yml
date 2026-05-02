@@ -1,0 +1,117 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "ع العمق النجفي" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: ع
+          - paragraph [ref=e8]: العمق النجفي
+        - button "تبديل النمط" [ref=e10]:
+          - img [ref=e11]
+        - navigation "التنقل السفلي" [ref=e13]:
+          - generic [ref=e14]:
+            - link "الرئيسية" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - img [ref=e16]
+              - generic [ref=e19]: الرئيسية
+            - link "الأقسام" [ref=e20] [cursor=pointer]:
+              - /url: /#categories
+              - img [ref=e21]
+              - generic [ref=e26]: الأقسام
+            - link "البحث" [ref=e27] [cursor=pointer]:
+              - /url: /search
+              - img [ref=e28]
+              - generic [ref=e31]: البحث
+            - link "الكتّاب" [ref=e32] [cursor=pointer]:
+              - /url: /authors/sara-almousawi
+              - img [ref=e33]
+              - generic [ref=e38]: الكتّاب
+            - link "حسابي" [ref=e39] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e40]
+              - generic [ref=e44]: حسابي
+    - main [ref=e45]:
+      - article [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: أدب ونقد
+            - generic [ref=e50]: الكتاب
+            - generic [ref=e51]: الصحافة الثقافية
+          - generic [ref=e52]:
+            - 'heading "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [level=1] [ref=e53]'
+            - paragraph [ref=e54]: إطلالة على تاريخ المجلات التي صنعت الوعي الحديث
+          - generic [ref=e55]:
+            - generic [ref=e56]: سارة الموسوي
+            - generic [ref=e57]: •
+            - generic [ref=e58]: ١٥ نيسان ٢٠٢٦
+            - generic [ref=e59]: •
+            - generic [ref=e60]: 6 دقائق قراءة
+            - generic [ref=e61]: •
+            - generic [ref=e62]: ٩٨٠ مشاهدة
+        - 'img "مراجعة كتاب: كيف صنعت المجلات الثقافية العربية ذائقة القرّاء؟" [ref=e64]'
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - button "56 حفظ" [ref=e68]:
+                - img [ref=e69]
+                - text: 56 حفظ
+              - button "84 إعجاب" [ref=e71]:
+                - img [ref=e72]
+                - text: 84 إعجاب
+              - button "طباعة" [ref=e74]:
+                - img [ref=e75]
+                - text: طباعة
+              - button "مشاركة" [ref=e79]:
+                - img [ref=e80]
+                - text: مشاركة
+            - generic [ref=e86]: كانت المجلة الثقافية مدرسة متنقلة في الذائقة.
+            - generic [ref=e87]:
+              - paragraph [ref=e88]: تعيد هذه المراجعة قراءة سيرة المجلات الثقافية العربية التي نقلت الجدل الأدبي من النخبة إلى الجمهور.
+              - paragraph [ref=e89]: تتبع المقالة تحولات اللغة النقدية، وملامح التحرير الرصين، ودور الغلاف البصري في تشكيل العادة القرائية.
+            - link "تحميل PDF" [ref=e91] [cursor=pointer]:
+              - /url: /api/articles/book-review-arabic-cultural-magazines/pdf
+            - region "التعليقات" [ref=e92]:
+              - generic [ref=e93]:
+                - heading "التعليقات" [level=2] [ref=e94]
+                - paragraph [ref=e95]: آراء القرّاء المنشورة.
+              - generic [ref=e96]: لا توجد تعليقات منشورة.
+          - complementary [ref=e97]:
+            - generic [ref=e98]:
+              - heading "عن المقال" [level=2] [ref=e99]
+              - generic [ref=e100]:
+                - generic [ref=e101]:
+                  - term [ref=e102]: القسم
+                  - definition [ref=e103]: أدب ونقد
+                - generic [ref=e104]:
+                  - term [ref=e105]: الكاتب
+                  - definition [ref=e106]: سارة الموسوي
+                - generic [ref=e107]:
+                  - term [ref=e108]: التفاعل
+                  - definition [ref=e109]: ٨٤ إعجاب
+    - contentinfo [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - heading "العمق النجفي" [level=3] [ref=e113]
+          - paragraph [ref=e114]: منصة عربية للنشر الثقافي والتحرير المعرفي.
+          - paragraph [ref=e115]: معرفة واضحة، وتحرير رصين.
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - heading "التنقل" [level=4] [ref=e118]
+            - generic [ref=e119]:
+              - link "الرئيسية" [ref=e120] [cursor=pointer]:
+                - /url: /
+              - link "الأقسام" [ref=e121] [cursor=pointer]:
+                - /url: /#categories
+              - link "البحث" [ref=e122] [cursor=pointer]:
+                - /url: /search
+              - link "الكتّاب" [ref=e123] [cursor=pointer]:
+                - /url: /authors/sara-almousawi
+              - link "التقديم ككاتب" [ref=e124] [cursor=pointer]:
+                - /url: /apply
+          - generic [ref=e125]:
+            - heading "عن المنصة" [level=4] [ref=e126]
+            - paragraph [ref=e127]: مساحة للنشر الثقافي العربي، تجمع المقالات والملفات والكتّاب ضمن تجربة قراءة واضحة.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e133] [cursor=pointer]:
+    - img [ref=e134]
+  - alert [ref=e137]

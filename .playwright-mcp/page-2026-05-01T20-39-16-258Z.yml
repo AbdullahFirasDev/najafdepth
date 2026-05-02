@@ -1,0 +1,14 @@
+- generic [active] [ref=e1]:
+  - region "Notifications alt+T":
+    - list:
+      - listitem [ref=e63]:
+        - img [ref=e65]
+        - generic [ref=e68]: مرحباً بك في العمق النجفي.
+  - button "Open Next.js Dev Tools" [ref=e69] [cursor=pointer]:
+    - generic [ref=e72]:
+      - text: Compiling
+      - generic [ref=e73]:
+        - generic [ref=e74]: .
+        - generic [ref=e75]: .
+        - generic [ref=e76]: .
+  - alert [ref=e62]: العمق النجفي

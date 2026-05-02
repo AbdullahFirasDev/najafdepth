@@ -1,0 +1,272 @@
+[browser] Image with src "/uploads/articles/covers/1777420236816-08eccd24-a386-48b0-ac16-e37f253a80b6.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+[browser] The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/app/(dashboard)/dashboard/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/prisma-adapter.ts:1:1
+Module not found: Can't resolve '@prisma/adapter-pg'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaPg[0m } [36mfrom[0m [32m"@prisma/adapter-pg"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { getServerEnv } [36mfrom[0m [32m"@/lib/env"[0m;
+  [90m4 |[0m
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/prisma-adapter.ts
+    ./src/lib/prisma.ts
+    ./src/lib/auth.ts
+    ./src/components/layout/site-header.tsx
+    ./src/app/(site)/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+

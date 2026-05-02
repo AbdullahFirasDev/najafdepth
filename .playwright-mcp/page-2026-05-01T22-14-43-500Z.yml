@@ -1,0 +1,73 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "ع العمق النجفي" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: ع
+          - paragraph [ref=e8]: العمق النجفي
+        - button "تبديل النمط" [ref=e10]:
+          - img [ref=e11]
+        - navigation "التنقل السفلي" [ref=e13]:
+          - generic [ref=e14]:
+            - link "الرئيسية" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - img [ref=e16]
+              - generic [ref=e19]: الرئيسية
+            - link "الأقسام" [ref=e20] [cursor=pointer]:
+              - /url: /#categories
+              - img [ref=e21]
+              - generic [ref=e26]: الأقسام
+            - link "البحث" [ref=e27] [cursor=pointer]:
+              - /url: /search
+              - img [ref=e28]
+              - generic [ref=e31]: البحث
+            - link "الكتّاب" [ref=e32] [cursor=pointer]:
+              - /url: /authors/sara-almousawi
+              - img [ref=e33]
+              - generic [ref=e38]: الكتّاب
+            - link "حسابي" [ref=e39] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e40]
+              - generic [ref=e44]: حسابي
+    - main [ref=e45]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "دخول هيئة التحرير والكتّاب" [level=1] [ref=e49]
+          - paragraph [ref=e50]: الوصول إلى لوحة النشر، سير المراجعة، والتحليلات التحريرية.
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - text: البريد الإلكتروني
+            - textbox "البريد الإلكتروني" [ref=e53]
+            - paragraph
+          - generic [ref=e54]:
+            - text: كلمة المرور
+            - textbox "كلمة المرور" [ref=e55]
+            - paragraph
+          - button "تسجيل الدخول" [ref=e56]
+    - contentinfo [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - heading "العمق النجفي" [level=3] [ref=e60]
+          - paragraph [ref=e61]: منصة عربية للنشر الثقافي والتحرير المعرفي.
+          - paragraph [ref=e62]: معرفة واضحة، وتحرير رصين.
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - heading "التنقل" [level=4] [ref=e65]
+            - generic [ref=e66]:
+              - link "الرئيسية" [ref=e67] [cursor=pointer]:
+                - /url: /
+              - link "الأقسام" [ref=e68] [cursor=pointer]:
+                - /url: /#categories
+              - link "البحث" [ref=e69] [cursor=pointer]:
+                - /url: /search
+              - link "الكتّاب" [ref=e70] [cursor=pointer]:
+                - /url: /authors/sara-almousawi
+              - link "التقديم ككاتب" [ref=e71] [cursor=pointer]:
+                - /url: /apply
+          - generic [ref=e72]:
+            - heading "عن المنصة" [level=4] [ref=e73]
+            - paragraph [ref=e74]: مساحة للنشر الثقافي العربي، تجمع المقالات والملفات والكتّاب ضمن تجربة قراءة واضحة.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e80] [cursor=pointer]:
+    - img [ref=e81]
